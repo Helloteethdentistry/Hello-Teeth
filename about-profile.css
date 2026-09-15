@@ -1,0 +1,122 @@
+.page-about .philosophy-section{background:#fff;padding-block:76px}
+.page-about .philosophy-grid{gap:64px}
+.page-about .profile-image{margin:0;position:relative;overflow:hidden;border-radius:26px;background:#e7f5f2}
+.page-about .profile-image img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.page-about .profile-image figcaption{position:absolute;left:20px;right:20px;bottom:20px;padding:18px 22px;background:#073f3be8;color:#fff;border-radius:15px;font-size:15px;font-weight:600}
+.page-about .philosophy-copy h1{font-family:Inter,Arial,sans-serif;font-weight:750;line-height:1.15;color:#073f3b}
+.page-about .philosophy-copy h1 em{font-style:normal;color:#176c65}
+.page-about .philosophy-copy>p:not(.eyebrow){color:#536b68;max-width:none;font-size:15px}
+.page-about .values-list{gap:17px}
+.page-about .values-list p{font-size:14px}
+.page-about .values-list>div>span{flex:0 0 30px;height:30px;display:inline-grid;place-items:center;border-radius:50%;background:#e7f5f2;color:#176c65;font-weight:700;font-size:11px}
+.page-about .philosophy-copy .text-link{font-size:14px}
+.doctor-section{padding:72px 0 84px;background:#e7f5f2}
+.doctor-profile-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:76px}
+.doctor-profile-copy h2{font-family:Inter,Arial,sans-serif;color:#073f3b;font-weight:750;font-size:clamp(30px,3.5vw,44px);line-height:1.2;margin-top:16px;letter-spacing:-1.4px}
+.doctor-profile-copy .doctor-role{font-size:17px;color:#176c65;font-weight:650;margin:13px 0 25px}
+.doctor-profile-copy>p:not(.eyebrow):not(.doctor-role){font-size:15px;line-height:1.9;color:#536b68;margin-top:15px}
+.doctor-profile-copy .button{margin-top:30px}
+.doctor-location{display:flex;align-items:center;gap:10px;color:#176c65;font-size:13px;margin-top:24px}
+.doctor-location .icon{width:19px;height:19px;flex-shrink:0}
+.doctor-portrait{margin:0;overflow:hidden;border-radius:190px 190px 24px 24px;background:#fff;position:relative;max-width:410px;width:100%;justify-self:center;box-shadow:0 20px 50px #073f3b1f}
+.doctor-portrait img{position:relative;width:100%;height:auto;aspect-ratio:81/128;object-fit:cover;object-position:center;display:block}
+.credentials-section{padding:84px 0 88px;background:#fff}
+.credentials-heading{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:38px}
+.credentials-heading h2,.recognition-copy h2{font-family:Inter,Arial,sans-serif;font-size:clamp(30px,3.5vw,44px);line-height:1.2;letter-spacing:-1.4px;color:#073f3b;margin-top:15px}
+.credentials-heading h2 em,.recognition-copy h2 em{font-style:normal;color:#176c65}
+.credentials-heading>p{font-size:14px;line-height:1.8;color:#536b68;max-width:380px}
+.credentials-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.credentials-grid article{border:1px solid #d5e7e1;border-radius:23px;padding:28px;background:#f7fbfa}
+.credentials-grid article:nth-child(2){background:#e7f5f2}
+.credential-number{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:#fff;border:1px solid #d5e7e1;color:#176c65;font-size:11px;font-weight:700;margin-bottom:23px}
+.credential-type{font-size:9px!important;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#657c77!important;margin:0 0 8px!important}
+.credentials-grid h3{font-size:20px;line-height:1.35;letter-spacing:-.5px;margin-bottom:10px;color:#073f3b}
+.credentials-grid article>p:last-child{font-size:13px;line-height:1.8;color:#536b68}
+.about-gallery-section{padding:84px 0 92px;background:#f7fbfa}
+.about-gallery-heading{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:38px}
+.about-gallery-heading h2{font-family:Inter,Arial,sans-serif;font-size:clamp(30px,3.5vw,44px);line-height:1.2;letter-spacing:-1.4px;color:#073f3b;margin-top:15px}
+.about-gallery-heading h2 em{font-style:normal;color:#176c65}
+.about-gallery-heading>p{font-size:14px;line-height:1.8;color:#536b68;max-width:390px}
+.clinic-team-category-grid{display:grid;grid-template-columns:1.45fr 1fr;grid-template-rows:245px 245px;gap:16px}
+.team-category-card{position:relative;display:block;overflow:hidden;width:100%;min-height:0;margin:0;padding:0;border:0;border-radius:22px;background:#dceeea;color:#fff;text-align:left;box-shadow:0 12px 34px #143d3710;cursor:zoom-in;transition:transform .25s ease,box-shadow .25s ease}
+.team-category-card:first-child{grid-row:1/3}
+.team-category-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px #143d3724}
+.team-category-card:focus-visible{outline:3px solid #d99a20;outline-offset:4px}
+.team-category-photo{position:absolute;inset:0;display:block;overflow:hidden;background:#dceeea}
+.team-category-photo img,.clinical-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.team-category-card:nth-child(1) .team-category-photo img{object-position:center 24%}
+.team-category-card:nth-child(2) .team-category-photo img{object-position:center 28%}
+.team-category-card:hover .team-category-photo img,.clinical-photo:hover img{transform:scale(1.045)}
+.team-category-copy{position:absolute;z-index:1;left:12px;right:12px;bottom:12px;display:flex;min-width:0;flex-direction:column;align-items:flex-start;padding:13px 15px;border-radius:13px;background:#073f3be8;color:#fff;box-shadow:0 8px 25px #002d2952}
+.team-category-copy small{margin-bottom:5px;color:#eec76f;font-size:9px;font-weight:750;letter-spacing:1.15px;text-transform:uppercase}
+.team-category-copy strong{font-size:18px;line-height:1.2;letter-spacing:-.35px}
+.team-category-copy span{margin-top:5px;color:#c7e3dc;font-size:10px;font-weight:550}
+.team-category-arrow{position:absolute;z-index:2;top:16px;right:16px;display:grid;width:36px;height:36px;place-items:center;border:1px solid #ffffff8a;border-radius:50%;background:#073f3bd9;color:#fff;font-size:17px;transition:background .25s ease,color .25s ease}
+.team-category-card:hover .team-category-arrow{background:#07564f;color:#fff}
+.clinical-photo figcaption{position:absolute;left:12px;right:12px;bottom:12px;padding:11px 13px;border-radius:11px;background:#073f3be6;color:#fff;font-size:11px;font-weight:650;letter-spacing:.1px}
+.team-gallery-dialog{width:min(940px,calc(100% - 34px));max-width:none;max-height:92dvh;padding:18px;border:1px solid #3d776d;border-radius:24px;background:#073f3b;color:#fff;overflow:hidden;box-shadow:0 30px 100px #021d1a73}
+.team-gallery-dialog .dialog-close{z-index:2;top:25px;right:25px;background:#fff;color:#073f3b}
+.team-gallery-stage{display:grid;place-items:center;height:min(72dvh,720px);overflow:hidden;border-radius:16px;background:#032f2c}
+.team-gallery-stage img{display:block;width:100%;height:100%;object-fit:contain}
+.team-gallery-controls{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;gap:15px;padding:15px 4px 1px}
+.team-gallery-dialog.has-single-photo .team-gallery-controls{grid-template-columns:1fr}
+.team-gallery-controls button{display:grid;place-items:center;width:42px;height:42px;border:1px solid #699d92;border-radius:50%;background:#0e514b;color:#fff;font-size:18px}
+.team-gallery-controls button[hidden]{display:none}
+.team-gallery-controls button:hover{background:#176c65}
+.team-gallery-controls p{text-align:center;color:#d5e9e4;font-size:13px;font-weight:650}
+.clinical-gallery-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:66px 0 25px;padding-top:36px;border-top:1px solid #cfe3de}
+.clinical-gallery-heading h3{font-size:clamp(24px,2.8vw,34px);line-height:1.25;letter-spacing:-1px;color:#073f3b;margin-top:12px}
+.clinical-gallery-heading>p{font-size:12px;line-height:1.8;color:#536b68;max-width:420px}
+.clinical-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.clinical-photo{position:relative;overflow:hidden;margin:0;min-width:0;border-radius:20px;background:#dceeea}
+.clinical-photo-wide,.clinical-photo-tall,.clinical-photo-poster{grid-column:span 2}
+.clinical-photo-wide{aspect-ratio:16/8}
+.clinical-photo-tall{aspect-ratio:4/5}
+.clinical-photo-makeover-before{aspect-ratio:576/652}
+.clinical-photo-makeover-after{aspect-ratio:576/604}
+.clinical-photo:not(.clinical-photo-wide):not(.clinical-photo-tall):not(.clinical-photo-poster){aspect-ratio:1}
+.clinical-photo-tall img{object-position:center top}
+.recognition-section{padding:82px 0;border-block:1px solid #d4e7e2;background:#f1f8f6;color:#073f3b}
+.recognition-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:70px;align-items:center}
+.recognition-copy .eyebrow{color:#a66c08}
+.recognition-copy h2{color:#073f3b}
+.recognition-copy h2 em{color:#176c65}
+.recognition-list{display:grid;gap:13px;margin-top:31px}
+.recognition-list article{display:flex;align-items:center;gap:16px;padding:19px 20px;border:1px solid #c9dfda;border-radius:16px;background:#fff;box-shadow:0 12px 30px #123c350d}
+.recognition-list article>span{display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background:#edf7f4;color:#c78308;font-size:22px;flex:0 0 auto}
+.recognition-list p{font-size:9px;text-transform:uppercase;letter-spacing:1.3px;color:#6b817d;margin-bottom:3px}
+.recognition-list h3{font-size:18px;line-height:1.4;color:#073f3b}
+.recognition-note{font-size:11px;line-height:1.7;color:#617a75;margin-top:18px}
+.clinic-gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.clinic-gallery figure{margin:0;border:1px solid #c9dfda;background:#fff;border-radius:21px;padding:10px;color:#073f3b;box-shadow:0 16px 38px #123c3512}
+.clinic-gallery figure:nth-child(2){margin-top:45px}
+.clinic-gallery img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:14px}
+.clinic-gallery figcaption{font-size:11px;font-weight:650;padding:12px 8px 5px}
+@media(max-width:980px){.page-about .philosophy-grid{gap:35px}.doctor-profile-grid{gap:36px}.recognition-grid{gap:35px}.about-gallery-heading,.clinical-gallery-heading{display:block}.about-gallery-heading>p,.clinical-gallery-heading>p{margin-top:16px}.clinic-team-category-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.team-category-card:first-child{grid-column:1/3;grid-row:auto;aspect-ratio:16/9}.team-category-card:not(:first-child){aspect-ratio:4/3}.clinical-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.clinical-photo-wide,.clinical-photo-tall,.clinical-photo-poster{grid-column:auto}}
+@media(max-width:760px){.page-about .philosophy-section{padding-block:42px}.page-about .philosophy-grid{gap:30px}.page-about .profile-image{max-width:480px;width:100%;justify-self:center}.page-about .profile-image figcaption{left:14px;right:14px;bottom:14px;padding:15px 17px;font-size:13px}.page-about .philosophy-copy>p:not(.eyebrow){font-size:14px}.page-about .values-list p{font-size:13px}.doctor-section{padding-block:44px}.doctor-profile-grid{grid-template-columns:1fr;gap:34px}.doctor-portrait{grid-row:1;max-width:330px}.doctor-profile-copy>p:not(.eyebrow):not(.doctor-role){font-size:14px}.credentials-section,.recognition-section,.about-gallery-section{padding-block:52px}.credentials-heading,.about-gallery-heading,.clinical-gallery-heading{display:block;margin-bottom:28px}.credentials-heading>p,.about-gallery-heading>p,.clinical-gallery-heading>p{font-size:13px;margin-top:16px}.credentials-grid{grid-template-columns:1fr;gap:13px}.credentials-grid article{padding:23px}.recognition-grid{grid-template-columns:1fr;gap:34px}.clinic-gallery{gap:12px}.clinic-gallery figure:nth-child(2){margin-top:28px}.clinical-gallery-heading{margin-top:46px}}
+@media(max-width:520px){.clinic-team-category-grid,.clinical-gallery{grid-template-columns:1fr}.team-category-card:first-child{grid-column:auto;aspect-ratio:4/5}.team-category-card:not(:first-child){aspect-ratio:4/3}.team-category-card{border-radius:18px}.team-category-copy{left:9px;right:9px;bottom:9px;padding:11px 13px}.team-category-copy strong{font-size:16px}.team-category-arrow{top:12px;right:12px;width:33px;height:33px}.clinical-photo-wide,.clinical-photo-tall,.clinical-photo:not(.clinical-photo-wide):not(.clinical-photo-tall):not(.clinical-photo-poster){aspect-ratio:4/3}.clinical-photo{min-height:0}.clinical-photo figcaption{left:9px;right:9px;bottom:9px}.team-gallery-dialog{width:calc(100% - 20px);padding:10px;border-radius:17px}.team-gallery-dialog .dialog-close{top:16px;right:16px}.team-gallery-stage{height:68dvh;border-radius:11px}.team-gallery-controls{grid-template-columns:40px 1fr 40px;gap:8px;padding-top:11px}.team-gallery-dialog.has-single-photo .team-gallery-controls{grid-template-columns:1fr}.team-gallery-controls button{width:38px;height:38px}.team-gallery-controls p{font-size:11px}}
+@media(max-width:390px){.clinic-gallery{grid-template-columns:1fr}.clinic-gallery figure:nth-child(2){margin-top:0}.clinic-gallery img{aspect-ratio:1.25}.credentials-heading h2,.recognition-copy h2,.about-gallery-heading h2{font-size:29px}}
+
+/* Treatment-based clinical gallery. */
+.treatment-gallery-nav{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:25px}
+.treatment-gallery-nav a{padding:10px 14px;border:1px solid #cfe3de;border-radius:999px;background:#fff;color:#176c65;font-size:11px;font-weight:650;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.treatment-gallery-nav a:hover,.treatment-gallery-nav a:focus-visible{background:#176c65;border-color:#176c65;color:#fff}
+.treatment-gallery-groups{display:grid;gap:24px}
+.treatment-gallery-group{scroll-margin-top:120px;padding:27px;border:1px solid #d5e7e1;border-radius:25px;background:#fff}
+.treatment-gallery-group-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:21px}
+.treatment-gallery-group-heading>div{position:relative;padding-left:57px}
+.treatment-gallery-number{position:absolute;left:0;top:1px;display:grid;place-items:center;width:41px;height:41px;border-radius:13px;background:#e7f5f2;color:#176c65;font-size:10px;font-weight:750}
+.treatment-gallery-group-heading p{text-transform:uppercase;color:#c78308;font-size:8px;font-weight:750;letter-spacing:1.35px;margin-bottom:5px}
+.treatment-gallery-group-heading h4{font-size:22px;line-height:1.35;letter-spacing:-.45px;color:#073f3b}
+.treatment-gallery-group-heading>a{color:#176c65;font-size:11px;font-weight:650;white-space:nowrap}
+.treatment-gallery-group-heading>a:hover,.treatment-gallery-group-heading>a:focus-visible{color:#073f3b;text-decoration:underline}
+.treatment-gallery-group .clinical-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.treatment-gallery-group .clinical-gallery-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.treatment-gallery-group .clinical-photo-wide,.treatment-gallery-group .clinical-photo-tall,.treatment-gallery-group .clinical-photo-poster{grid-column:auto}
+.treatment-gallery-group .clinical-photo-wide{aspect-ratio:16/8}
+.treatment-gallery-group .clinical-photo-tall{aspect-ratio:4/5}
+.treatment-gallery-group .clinical-gallery-portraits{max-width:720px}
+.clinical-photo-stock figcaption{background:#073f3bf2}
+@media(max-width:760px){.treatment-gallery-group{padding:21px}.treatment-gallery-group-heading h4{font-size:20px}.treatment-gallery-group .clinical-gallery-three{grid-template-columns:repeat(2,minmax(0,1fr))}.treatment-gallery-group .clinical-gallery-three .clinical-photo:last-child{grid-column:1/-1;aspect-ratio:16/8}.treatment-gallery-nav{gap:7px}.treatment-gallery-nav a{padding:9px 12px;font-size:10px}}
+@media(max-width:520px){.treatment-gallery-group{padding:17px;border-radius:20px}.treatment-gallery-group-heading{display:block}.treatment-gallery-group-heading>a{display:inline-block;margin:14px 0 2px 57px}.treatment-gallery-group .clinical-gallery,.treatment-gallery-group .clinical-gallery-two,.treatment-gallery-group .clinical-gallery-three{grid-template-columns:1fr}.treatment-gallery-group .clinical-gallery-three .clinical-photo:last-child{grid-column:auto;aspect-ratio:4/3}.treatment-gallery-group .clinical-photo-wide,.treatment-gallery-group .clinical-photo-tall,.treatment-gallery-group .clinical-photo-poster{aspect-ratio:4/3}.treatment-gallery-group .clinical-photo-makeover-before{aspect-ratio:576/652}.treatment-gallery-group .clinical-photo-makeover-after{aspect-ratio:576/604}}
+@media(prefers-reduced-motion:reduce){.treatment-gallery-nav a{transition:none}}

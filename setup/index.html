@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#163e38">
+  <title>Connect patient inquiries · Hello Teeth</title>
+  <link rel="stylesheet" href="setup.css">
+  <script defer src="form-source.js"></script>
+  <script defer src="setup.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to setup</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Hello Teeth<span>YOUR SMILE OUR EFFORTS</span></a>
+    <a class="back-link" href="../index.html">Back to website <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <span class="eyebrow">FOR THE CLINIC OWNER</span>
+      <h1>A little setup.<br>A warmer <em>first hello.</em></h1>
+      <p>Your patient inquiry form is ready to create. Run the prepared script once in your Google account to create the form and its response spreadsheet, then connect it to your website.</p>
+      <div class="status-note"><span class="status-dot" aria-hidden="true"></span>Account setup required · the Google Form has not been created yet</div>
+    </section>
+
+    <div class="setup-layout">
+      <div class="steps">
+        <section class="step" aria-labelledby="step-one">
+          <span class="step-number" aria-hidden="true">01</span>
+          <div class="step-body">
+            <h2 id="step-one">Open your Google workspace</h2>
+            <p>Use the Google account that will own the clinic’s inquiries. Create a new Apps Script project and name it <strong>Hello Teeth — Inquiry Setup</strong>.</p>
+            <a class="button" href="https://script.google.com/home/start" target="_blank" rel="noopener noreferrer">Open Google Apps Script <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="step" aria-labelledby="step-two">
+          <span class="step-number" aria-hidden="true">02</span>
+          <div class="step-body">
+            <h2 id="step-two">Let the script build your form</h2>
+            <p>Copy the script below. Replace everything in the project’s <code>Code.gs</code> file, then save. Select <code>createHelloTeethInquiryForm</code> from the function menu and click <strong>Run</strong>.</p>
+            <p>Google will ask you to sign in and review access to Forms and Sheets. This runs in your account. No website server, deployment, or API key is needed.</p>
+            <div class="actions">
+              <button class="button" id="copy-script" type="button">Copy form creator <span aria-hidden="true">⧉</span></button>
+              <a class="text-link" href="create-google-form.gs" download>Download .gs file</a>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+            <details class="script-details" id="script-details">
+              <summary>Read the complete script</summary>
+              <label class="visually-hidden" for="script-source">Google Apps Script form creator</label>
+              <textarea id="script-source" spellcheck="false" readonly rows="16" aria-describedby="script-help"></textarea>
+              <p id="script-help" class="small">You can also select this text and copy it manually. The downloadable file contains the same script.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="step" aria-labelledby="step-three">
+          <span class="step-number" aria-hidden="true">03</span>
+          <div class="step-body">
+            <h2 id="step-three">Find your form and patient tracker</h2>
+            <p>The Apps Script execution log prints three links. Save the <strong>form editor</strong> and <strong>patient inquiries sheet</strong> links for your team. Copy the <strong>PUBLIC FORM URL</strong> for your website.</p>
+            <div class="tip">You can also find both files in <a href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener noreferrer">your Google Drive</a> by searching for <strong>Hello Teeth</strong>.</div>
+            <p>Open the public form in a private browser window. Check that responder access is set to <strong>Anyone with the link</strong> and submit a test inquiry. Confirm its arrival in the linked spreadsheet. A managed Google Workspace account may need an administrator to allow external responders.</p>
+          </div>
+        </section>
+
+        <section class="step" aria-labelledby="step-four">
+          <span class="step-number" aria-hidden="true">04</span>
+          <div class="step-body">
+            <h2 id="step-four">Connect it to your website</h2>
+            <p>Paste your public form link below to prepare the setting. Then replace the empty <code>googleFormUrl</code> value in <code>clinic-config.js</code> with this URL, save the file, and refresh your website.</p>
+            <form id="link-helper" novalidate>
+              <label for="form-url">Public Google Form link</label>
+              <input id="form-url" name="form-url" type="url" autocomplete="off" inputmode="url" placeholder="https://docs.google.com/forms/d/e/…/viewform" aria-describedby="link-help link-status" required>
+              <p id="link-help" class="small">Use the public responder link ending in <code>/viewform</code>. If you have a <code>forms.gle</code> short link, open it and copy the full address.</p>
+              <button class="button" type="submit">Prepare website setting <span aria-hidden="true">→</span></button>
+              <p id="link-status" class="copy-status" role="status" aria-live="polite"></p>
+            </form>
+            <div id="config-result" class="config-result" hidden>
+              <label for="config-line">Replace the matching line in clinic-config.js</label>
+              <textarea id="config-line" rows="3" readonly spellcheck="false"></textarea>
+              <div class="actions">
+                <button class="button button-outline" type="button" id="copy-config">Copy setting</button>
+                <a class="text-link" id="preview-form" target="_blank" rel="noopener noreferrer">Open your form ↗</a>
+              </div>
+              <p class="small">This helper prepares text only; it does not change your project files. Keep the form editor and response spreadsheet URLs out of your website configuration.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="setup-sidebar">
+        <div class="preview-card">
+          <span class="eyebrow">YOUR INQUIRY FORM</span>
+          <h2>Every conversation<br>starts with care.</h2>
+          <p>A thoughtful, short form for patients near and far.</p>
+          <ul class="included-list">
+            <li>Name and email address</li>
+            <li>Optional international phone number</li>
+            <li>Country of residence</li>
+            <li>Area of interest</li>
+            <li>Preferred contact method</li>
+            <li>Optional visit timing and message</li>
+            <li>Permission to contact</li>
+          </ul>
+          <div class="preview-footer"><span aria-hidden="true">✦</span> Replies appear in your Google Sheet.</div>
+        </div>
+        <div class="side-note">
+          <h3>One setup. Your account.</h3>
+          <p>Run the script again in the same project to retrieve the existing links. It reuses the form and spreadsheet, preserves responses, and sends no emails.</p>
+          <p>The form asks for a general inquiry and basic contact details. Patients are asked to leave out medical records and payment information.</p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="after-setup" aria-labelledby="after-title">
+      <span class="eyebrow">MAKE IT YOURS</span>
+      <h2 id="after-title">The finishing touches</h2>
+      <p>In the form editor, use Customize theme to add the clinic logo, set an evergreen accent, and preview the form on your phone. In <code>clinic-config.js</code>, add the clinic’s real phone number, email, address, and dentist’s name before publishing the website.</p>
+      <p class="small">This setup uses Google’s <a href="https://developers.google.com/apps-script/reference/forms/form" target="_blank" rel="noopener noreferrer">Forms service</a> and <a href="https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app" target="_blank" rel="noopener noreferrer">Spreadsheet service</a>. The clinic website remains entirely front end.</p>
+    </section>
+    <noscript><p class="noscript-note">JavaScript is disabled. Download the .gs file in step 2, open it in a text editor, and follow the four steps above. Paste the public form URL directly into clinic-config.js.</p></noscript>
+  </main>
+  <footer>Hello Teeth <span>Your Smile Our Efforts</span></footer>
+</body>
+</html>

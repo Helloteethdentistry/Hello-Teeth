@@ -1,0 +1,183 @@
+/* Homepage adapted from the supplied Hello Teeth reference. */
+.ht-hero{background:#f4f8f8 url('assets/clinic-hero-background.png') center/cover no-repeat;overflow:hidden}
+.ht-hero-grid{display:grid;grid-template-columns:1.2fr 1fr;min-height:605px;gap:32px;align-items:center}
+.ht-hero-copy{padding:55px 0 115px;position:relative;z-index:1}
+.ht-kicker{color:#a8710c;font-size:13px;font-weight:600;letter-spacing:.5px;line-height:1.5;margin-bottom:17px}
+.ht-hero h1{font-family:var(--sans);font-size:clamp(38px,3.5vw,50px);font-weight:750;line-height:1.15;letter-spacing:-1.8px;margin-bottom:20px;color:#073f3b}
+.ht-hero h1 span{color:#cb8b16}
+.ht-hero-intro{max-width:540px;color:#365653;line-height:1.85;font-size:15px}
+.ht-hero-actions{display:flex;align-items:center;gap:25px;margin-top:28px;flex-wrap:wrap}
+.ht-hero-actions .button{border-radius:7px;font-size:13px;min-height:54px;gap:15px}
+.ht-contact-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:650;padding-block:12px}
+.ht-contact-link .icon{width:17px;height:17px}
+.ht-contact-link:hover{color:#a8710c}
+.ht-opening{display:flex;gap:13px;align-items:center;margin-top:29px}
+.ht-clock{font-size:32px;color:#176c65;line-height:1}
+.ht-opening strong{display:block;font-size:20px;line-height:1.5;font-weight:650;letter-spacing:-.5px}
+.ht-opening div>span{font-size:12px;color:#52706c;display:block;margin-top:2px}
+.ht-hero-portrait{align-self:end;display:flex;justify-content:center;position:relative;min-width:0}
+.ht-hero-portrait img{width:380px;height:auto;max-height:580px;object-fit:contain;object-position:bottom;filter:drop-shadow(0 8px 25px #0d645a0b)}
+.ht-services{position:relative;margin-top:-77px;z-index:2;background:#073f3b;padding:20px;border-radius:30px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.ht-service{display:flex;flex-direction:column;align-items:flex-start;padding:28px 25px 23px;background:white;border:1px solid #d2e5e0;border-radius:23px;transition:transform .25s,background-color .25s,border-color .25s,box-shadow .25s,color .25s}
+.ht-service:nth-child(2){background:#e3f3f0}
+.ht-service:hover,.ht-service:focus-visible{transform:translateY(-7px);background:#176c65;border-color:#176c65;color:#fff;box-shadow:0 18px 34px #073f3b3b}
+.ht-service:hover .ht-service-icon,.ht-service:focus-visible .ht-service-icon{background:#fff;color:#176c65;transform:rotate(-4deg) scale(1.05)}
+.ht-service:hover h2,.ht-service:focus-visible h2{color:#fff}
+.ht-service:hover>p,.ht-service:focus-visible>p{color:#e4f3ef}
+.ht-service:hover .ht-service-more,.ht-service:focus-visible .ht-service-more{color:#fff}
+.ht-service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:#e7f5f2;margin-bottom:23px;transition:background-color .25s,color .25s,transform .25s}
+.ht-service:nth-child(2) .ht-service-icon{background:white}
+.ht-service-icon .icon{width:30px;height:30px;stroke-width:1.65}
+.ht-service h2{font-size:19px;font-weight:700;font-family:var(--sans);letter-spacing:-.45px;line-height:1.4;margin-bottom:10px}
+.ht-service>p{font-size:13px;line-height:1.8;color:#57736e;margin-bottom:18px}
+.ht-service-more{display:flex;width:100%;justify-content:space-between;gap:10px;font-size:11px;font-weight:600;margin-top:auto;color:#176c65}
+.ht-service-more>span{font-size:18px;line-height:1}
+.ht-section{padding-block:96px}
+.ht-section-copy h2,.ht-centered-title h2{font-family:var(--sans);font-weight:700;font-size:clamp(29px,3vw,41px);line-height:1.2;letter-spacing:-1.3px;color:#073f3b}
+.ht-section-copy h2 span,.ht-centered-title h2 span{color:#176c65}
+.ht-section-copy>p:not(.ht-kicker){font-size:14px;line-height:1.9;color:#557571;margin-top:22px}
+.ht-about{display:grid;grid-template-columns:1fr 1.1fr;gap:68px;align-items:center}
+.ht-about-photo{position:relative;padding:0 15px 17px 0}
+.ht-about-photo>img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:20px}
+.ht-photo-note{position:absolute;bottom:0;right:0;display:flex;align-items:center;gap:15px;padding:18px 22px;background:#fff;box-shadow:0 8px 35px #073f3b12;border:1px solid #e0ede9;border-radius:14px;font-size:12px;line-height:1.7}
+.ht-photo-note .icon{width:34px;height:34px;color:#176c65}
+.ht-photo-note strong{font-size:13px}
+.ht-checks{list-style:none;padding:0;margin:24px 0 28px;display:grid;gap:11px;font-size:13px;color:#365e57}
+.ht-checks li{display:flex;gap:11px;align-items:baseline}
+.ht-checks li::before{content:'✓';font-size:13px;color:#176c65;font-weight:700}
+.ht-doctor{background:#eff8f5;padding-block:70px}
+.ht-doctor-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.ht-doctor-name{border-left:3px solid #d99a20;padding-left:18px;margin-top:25px}
+.ht-doctor-name h3{font-size:22px;font-weight:700;letter-spacing:-.5px}
+.ht-doctor-name p{font-size:12px;color:#557571;margin-top:5px}
+.ht-doctor .text-link{margin-top:24px}
+.ht-doctor-photo{background:#d8ece6;padding:12px;border-radius:26px;transform:rotate(1deg)}
+.ht-doctor-photo>img{border-radius:18px;aspect-ratio:1.2;object-fit:cover;width:100%;height:auto}
+.ht-doctor-caption{font-size:11px;display:flex;align-items:center;justify-content:center;gap:9px;padding:16px 8px 6px}
+.ht-doctor-caption .icon{width:16px;height:16px}
+.ht-centered-title{text-align:center;max-width:720px;margin:0 auto 50px}
+.ht-centered-title .ht-kicker{text-transform:uppercase;font-size:11px;letter-spacing:2.2px;color:#176c65}
+.ht-centered-title>p:last-child:not(.ht-kicker){font-size:14px;color:#557571;margin-top:18px}
+.ht-values-grid{display:grid;grid-template-columns:1fr 300px 1fr;gap:38px;align-items:center}
+.ht-values-column{display:grid;gap:29px}
+.ht-value{position:relative;padding-left:62px;min-height:95px}
+.ht-value h3{font-size:17px;font-weight:650;letter-spacing:-.4px;margin-bottom:9px}
+.ht-value p{font-size:13px;line-height:1.85;color:#557571}
+.ht-value-icon{position:absolute;left:0;top:0;border:1px solid #d1e2dd;border-radius:50%;width:45px;height:45px;display:grid;place-items:center;font-size:23px;color:#176c65}
+.ht-values-column:first-child .ht-value{text-align:right;padding-left:0;padding-right:62px}
+.ht-values-column:first-child .ht-value-icon{right:0;left:auto}
+.ht-tooth-art{position:relative;background:radial-gradient(ellipse,#e2f3ee 0%,#f5faf7 53%,transparent 70%);aspect-ratio:1/1.2;display:flex;align-items:center;justify-content:center}
+.ht-tooth-art::before{content:'';position:absolute;inset:25px 0;border:1px solid #e0eae5;border-radius:50%}
+.ht-tooth-art svg{width:92%;height:auto;position:relative}
+.ht-art-sparkle{position:absolute;top:23px;right:15px;font-size:38px;color:#d99a20}
+.ht-art-plus{position:absolute;left:14px;bottom:62px;font-size:36px;font-weight:300;color:#75a89a}
+.ht-art-label{position:absolute;bottom:5px;left:0;width:100%;text-align:center;font-size:9px;letter-spacing:1.8px;font-weight:600;color:#557571}
+.ht-credentials{background:#073f3b;color:#fff;position:relative;overflow:hidden}
+.ht-credentials::before{content:'';position:absolute;width:420px;height:420px;border:1px solid #83b8aa35;border-radius:50%;right:-160px;top:-240px}
+.ht-credentials .ht-section{position:relative}
+.ht-credentials-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:38px}
+.ht-credentials-heading h2{font-family:var(--sans);font-weight:700;font-size:clamp(29px,3vw,41px);line-height:1.2;letter-spacing:-1.3px;color:#fff}
+.ht-credentials-heading h2 span{color:#9bd2c4}
+.ht-credentials-heading>.ht-kicker,.ht-credentials .ht-kicker{color:#e0a83c}
+.ht-credentials-heading>p{max-width:360px;color:#bdd8d2;font-size:13px;line-height:1.8}
+.ht-credential-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ht-credential-grid article{background:#fff;color:#073f3b;border-radius:22px;padding:25px;min-height:235px;display:flex;flex-direction:column;align-items:flex-start}
+.ht-credential-grid .ht-credential-awards{background:#e3f3f0}
+.ht-credential-icon{width:49px;height:49px;display:grid;place-items:center;background:#e7f5f2;border-radius:14px;color:#176c65;font-weight:750;font-size:13px;letter-spacing:.3px;margin-bottom:25px}
+.ht-credential-awards .ht-credential-icon{background:#fff;color:#c78308;font-size:22px}
+.ht-credential-label{text-transform:uppercase;color:#6b817d;font-size:9px;letter-spacing:1.5px;font-weight:700;margin-bottom:8px}
+.ht-credential-grid h3{font-size:18px;line-height:1.35;letter-spacing:-.4px;margin-bottom:10px}
+.ht-credential-grid article>p:last-child{font-size:12px;line-height:1.75;color:#557571}
+.ht-credentials-link{color:#fff;margin-top:29px}
+.ht-credentials-link:hover{color:#9bd2c4}
+.ht-visit{background:#f4f9f7;border-block:1px solid #e5eee9}
+.ht-visit .ht-centered-title{margin-bottom:35px}
+.ht-visit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.ht-visit-grid article{padding:30px;border:1px solid #dce9e4;border-radius:22px;background:white}
+.ht-step{font-size:12px;letter-spacing:1px;display:grid;place-items:center;background:#e7f5f2;color:#176c65;width:43px;height:43px;border-radius:13px;margin-bottom:21px;font-weight:650}
+.ht-visit h3{font-size:19px;font-weight:650;line-height:1.4;letter-spacing:-.4px;margin-bottom:12px}
+.ht-visit article p{font-size:13px;line-height:1.85;color:#557571}
+.ht-visit .wrap>.text-link{display:flex;width:fit-content;margin:30px auto 0}
+.ht-appointment{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:85px}
+.ht-appointment-actions{display:flex;align-items:center;gap:23px;flex-wrap:wrap;margin-top:27px}
+.ht-appointment .ht-small-note{font-size:11px!important;margin-top:16px!important}
+.ht-location-card{background:#e7f5f2;border:1px solid #d5e8e2;border-radius:25px;padding:32px}
+.ht-location-icon{width:50px;height:50px;background:white;border-radius:50%;display:grid;place-items:center;margin-bottom:19px}
+.ht-location-card .ht-kicker{font-size:11px;color:#176c65;margin-bottom:10px}
+.ht-location-card h3{font-size:23px;line-height:1.35;font-weight:650;letter-spacing:-.6px}
+.ht-location-card>p:not(.ht-kicker){font-size:13px;line-height:1.85;color:#557571;margin-top:15px}
+.ht-location-card .ht-location-hours{padding-top:13px;border-top:1px solid #c9e1da;color:#176c65!important}
+.ht-location-card .text-link{margin-top:23px}
+@media(min-width:1450px){.ht-hero-grid{min-height:640px}.ht-hero-portrait img{width:400px;max-height:615px}}
+@media(max-width:1100px){.ht-hero-grid{gap:10px;min-height:560px}.ht-hero h1{font-size:41px}.ht-hero-portrait img{width:350px}.ht-hero-actions{gap:18px}.ht-hero-actions .button{font-size:12px;padding-inline:18px}.ht-services{gap:13px;padding:16px}.ht-service{padding:23px 19px}.ht-service h2{font-size:18px}.ht-about{gap:40px}.ht-doctor-grid{gap:45px}.ht-values-grid{grid-template-columns:1fr 245px 1fr;gap:20px}.ht-value{padding-left:49px}.ht-values-column:first-child .ht-value{padding-right:49px}.ht-value-icon{width:36px;height:36px;font-size:20px}.ht-value h3{font-size:15px}.ht-credential-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ht-credential-grid article{min-height:210px}.ht-appointment{gap:45px}}
+@media(max-width:850px){.ht-hero h1{font-size:35px;letter-spacing:-1.2px}.ht-hero-grid{grid-template-columns:1.2fr 1fr;min-height:530px}.ht-hero-portrait img{max-height:430px;max-width:120%;width:320px}.ht-hero-copy{padding-top:45px;padding-bottom:125px}.ht-hero-intro{font-size:13px}.ht-hero-actions{gap:5px 17px}.ht-contact-link{font-size:12px}.ht-opening{margin-top:17px}.ht-opening div>span{font-size:10px}.ht-services{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:-85px}.ht-service h2 br{display:none}.ht-service-icon{margin-bottom:16px}.ht-service{padding:24px}.ht-section{padding-block:65px}.ht-about{gap:30px}.ht-section-copy h2,.ht-centered-title h2{font-size:30px}.ht-section-copy>p:not(.ht-kicker){font-size:13px}.ht-checks{font-size:12px;gap:9px}.ht-doctor{padding-block:55px}.ht-doctor-grid{gap:32px}.ht-values-grid{grid-template-columns:1fr 1fr;gap:35px}.ht-tooth-art{display:none}.ht-values-column:first-child .ht-value{text-align:left;padding-right:0;padding-left:55px}.ht-values-column:first-child .ht-value-icon{left:0;right:auto}.ht-value{padding-left:55px}.ht-values-column{gap:25px}.ht-value h3{font-size:16px}.ht-visit-grid{gap:15px}.ht-visit-grid article{padding:22px}.ht-visit h3{font-size:17px}.ht-appointment{gap:30px;grid-template-columns:1.1fr 1fr}.ht-location-card{padding:25px}.ht-location-card h3{font-size:21px}}
+@media(max-width:600px){.ht-hero-grid{grid-template-columns:1fr;gap:0;min-height:0}.ht-hero-copy{padding:37px 0 20px;text-align:center}.ht-kicker{font-size:12px;margin-bottom:14px}.ht-hero h1{font-size:clamp(32px,8.7vw,46px);letter-spacing:-1.3px;line-height:1.15;margin-bottom:17px}.ht-hero-intro{font-size:13px;max-width:430px;margin-inline:auto}.ht-hero-actions{justify-content:center;gap:10px 20px;margin-top:22px}.ht-hero-actions .button{min-height:49px;font-size:12px}.ht-opening{justify-content:center;margin-top:18px;text-align:left}.ht-opening strong{font-size:18px}.ht-opening div>span{font-size:10px}.ht-clock{font-size:29px}.ht-hero-portrait{margin-top:6px}.ht-hero-portrait img{width:250px;height:330px;object-fit:cover;object-position:top;max-width:100%}.ht-services{margin-top:-22px;padding:13px;gap:12px;border-radius:23px}.ht-service{padding:21px 16px;border-radius:16px}.ht-service h2{font-size:17px;line-height:1.35}.ht-service>p{font-size:12px;margin-bottom:13px}.ht-service-icon{width:43px;height:43px;border-radius:12px;margin-bottom:16px}.ht-service-icon .icon{width:26px;height:26px}.ht-service-more{font-size:10px}.ht-section{padding-block:52px}.ht-about{grid-template-columns:1fr;gap:34px}.ht-about-photo{max-width:460px;margin-inline:auto;width:100%}.ht-about-photo>img{aspect-ratio:1.14}.ht-section-copy h2,.ht-centered-title h2{font-size:31px;letter-spacing:-1px}.ht-section-copy>p:not(.ht-kicker){font-size:14px;margin-top:19px}.ht-checks{font-size:13px;margin-block:20px 25px}.ht-photo-note{padding:14px 18px}.ht-doctor{padding-block:45px}.ht-doctor-grid{grid-template-columns:1fr;gap:32px}.ht-doctor-name h3{font-size:22px}.ht-doctor-photo{max-width:470px;width:100%;margin-inline:auto;transform:none}.ht-doctor-caption{font-size:10px}.ht-centered-title{margin-bottom:33px}.ht-centered-title>p:last-child:not(.ht-kicker){font-size:13px}.ht-values-grid{gap:22px}.ht-value,.ht-values-column:first-child .ht-value{padding:0;text-align:left}.ht-value-icon,.ht-values-column:first-child .ht-value-icon{position:static;width:39px;height:39px;margin-bottom:13px}.ht-value h3{font-size:16px;line-height:1.4}.ht-value p{font-size:12px}.ht-values-column{gap:27px}.ht-credentials-heading{display:block;margin-bottom:27px}.ht-credentials-heading>p{margin-top:15px;font-size:12px}.ht-credential-grid{grid-template-columns:1fr;gap:12px}.ht-credential-grid article{min-height:0;padding:22px}.ht-credential-icon{margin-bottom:18px}.ht-credentials-link{font-size:12px}.ht-visit-grid{grid-template-columns:1fr;gap:14px}.ht-visit-grid article{padding:23px}.ht-step{float:left;margin:0 18px 24px 0}.ht-visit h3{font-size:18px;margin-top:2px}.ht-visit article p{clear:both}.ht-visit .ht-centered-title h2 br{display:none}.ht-visit .wrap>.text-link{font-size:12px}.ht-appointment{grid-template-columns:1fr;gap:30px}.ht-appointment-actions{gap:19px;margin-top:24px}.ht-appointment-actions .button{font-size:12px;padding-inline:20px}.ht-location-card{padding:27px}.ht-location-card h3{font-size:23px}}
+@media(max-width:380px){.ht-services{grid-template-columns:1fr}.ht-service{padding:23px}.ht-service h2 br{display:none}.ht-service>p{font-size:13px}.ht-service-more{font-size:11px}.ht-hero h1{font-size:32px}.ht-hero-actions{gap:5px}.ht-hero-actions .button{width:100%}.ht-hero-portrait img{height:300px;width:230px}.ht-values-grid{gap:20px}.ht-values-column{gap:24px}.ht-value h3{font-size:15px}.ht-value p{font-size:12px}.ht-section-copy h2,.ht-centered-title h2{font-size:29px}}
+@media(prefers-reduced-motion:reduce){.ht-service:hover,.ht-service:focus-visible{transform:none}.ht-service:hover .ht-service-icon,.ht-service:focus-visible .ht-service-icon{transform:none}}
+@media print{.ht-hero{background:white}.ht-hero-grid,.ht-about,.ht-doctor-grid,.ht-appointment{display:block}.ht-hero-copy{padding:20px 0}.ht-hero-portrait,.ht-about-photo,.ht-doctor-photo,.ht-tooth-art{display:none}.ht-services{margin-top:0;background:white;padding:0;grid-template-columns:repeat(2,1fr)}.ht-section{padding-block:25px}.ht-values-grid{grid-template-columns:1fr 1fr}.ht-doctor,.ht-visit,.ht-credentials{background:white;color:#073f3b}.ht-credentials-heading h2,.ht-credentials-link{color:#073f3b}.ht-credential-grid{grid-template-columns:repeat(2,1fr)}.ht-visit-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* Alternating modern-care rows inspired by the supplied layout reference. */
+.ht-modern-care{background:#fff;border-block:1px solid #e6efec}
+.ht-modern-heading{text-align:center;max-width:720px;margin:0 auto 56px}
+.ht-modern-heading h2{font-size:clamp(32px,4vw,48px);line-height:1.17;letter-spacing:-1.7px;font-weight:750;color:#073f3b}
+.ht-modern-heading h2 span{color:#176c65}
+.ht-modern-heading>p:last-child{max-width:600px;margin:18px auto 0;color:#557571;font-size:14px;line-height:1.8}
+.ht-modern-list{display:grid;gap:62px;max-width:1020px;margin-inline:auto}
+.ht-modern-row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(460px,1.1fr);align-items:center;gap:64px}
+.ht-modern-row:nth-child(even) .ht-modern-copy{order:2}
+.ht-modern-row:nth-child(even) .ht-modern-media{order:1}
+.ht-modern-copy{max-width:420px}
+.ht-modern-eyebrow{text-transform:uppercase;color:#c78308;font-size:9px;font-weight:750;letter-spacing:1.5px;margin-bottom:9px}
+.ht-modern-copy h3{font-size:clamp(23px,2.5vw,31px);line-height:1.25;letter-spacing:-.8px;color:#073f3b;margin-bottom:13px}
+.ht-modern-copy>p:not(.ht-modern-eyebrow){font-size:13px;line-height:1.85;color:#557571}
+.ht-modern-copy .text-link{display:flex;width:fit-content;margin-top:19px;font-size:12px}
+.ht-modern-media{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.ht-modern-media figure{position:relative;overflow:hidden;margin:0;border-radius:22px;background:#dceeea;box-shadow:0 15px 35px #073f3b12;aspect-ratio:1.08}
+.ht-modern-media figure:nth-child(2){margin-top:31px}
+.ht-modern-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.ht-modern-media figure:hover img{transform:scale(1.035)}
+.ht-modern-row:nth-child(2) .ht-modern-media img{object-position:center}
+.ht-modern-row:nth-child(4) .ht-modern-media figure:nth-child(2) img{object-position:center 35%}
+.ht-stock-photo figcaption{position:absolute;left:9px;bottom:9px;padding:7px 9px;border-radius:8px;background:#073f3bdb;color:#fff;font-size:9px;font-weight:650;letter-spacing:.25px}
+@media(max-width:900px){.ht-modern-row{grid-template-columns:minmax(0,.82fr) minmax(380px,1.18fr);gap:36px}.ht-modern-list{gap:50px}}
+@media(max-width:720px){.ht-modern-heading{margin-bottom:39px}.ht-modern-row{grid-template-columns:1fr;gap:24px}.ht-modern-row:nth-child(even) .ht-modern-copy,.ht-modern-row:nth-child(even) .ht-modern-media{order:initial}.ht-modern-copy{max-width:580px}.ht-modern-list{gap:48px}.ht-modern-media{max-width:580px;width:100%}.ht-modern-copy h3{font-size:25px}.ht-modern-heading>p:last-child{font-size:13px}}
+@media(max-width:480px){.ht-modern-heading{text-align:left}.ht-modern-heading h2{font-size:30px;letter-spacing:-1px}.ht-modern-heading h2 br{display:none}.ht-modern-media{gap:10px}.ht-modern-media figure{border-radius:17px;aspect-ratio:.92}.ht-modern-media figure:nth-child(2){margin-top:20px}.ht-modern-copy>p:not(.ht-modern-eyebrow){font-size:13px}.ht-modern-list{gap:42px}}
+@media(prefers-reduced-motion:reduce){.ht-modern-media img{transition:none}.ht-modern-media figure:hover img{transform:none}}
+@media print{.ht-modern-row{grid-template-columns:1fr 1fr;gap:25px}.ht-modern-list{gap:25px}.ht-modern-media figure{box-shadow:none}.ht-modern-media figure:nth-child(2){margin-top:0}}
+
+/* Post-surgery nutrition and dietitian section. */
+.ht-aftercare{position:relative;overflow:hidden;border-block:1px solid #d4e7e2;background:#eef7f5;color:#073f3b}
+.ht-aftercare::before,.ht-aftercare::after{content:'';position:absolute;border:1px solid #76aa9e38;border-radius:50%;pointer-events:none}
+.ht-aftercare::before{width:470px;height:470px;top:-290px;right:-95px}
+.ht-aftercare::after{width:260px;height:260px;bottom:-190px;left:-70px}
+.ht-aftercare .ht-section{position:relative}
+.ht-aftercare-intro{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:end;gap:75px;padding-bottom:42px;border-bottom:1px solid #c5ded8}
+.ht-aftercare .ht-kicker{color:#e0a83c;text-transform:uppercase;font-size:11px;letter-spacing:2px}
+.ht-aftercare-intro h2{font-family:var(--sans);font-size:clamp(31px,3.1vw,43px);font-weight:750;line-height:1.17;letter-spacing:-1.5px;color:#073f3b}
+.ht-aftercare-intro h2 span{color:#176c65}
+.ht-aftercare-intro>p{color:#4f6e69;font-size:14px;line-height:1.9}
+.ht-aftercare-grid{display:grid;grid-template-columns:minmax(0,.76fr) minmax(0,1.24fr);gap:24px;margin-top:38px;align-items:stretch}
+.ht-dietitian-card{display:flex;flex-direction:column;padding:30px;border:1px solid #c9dfda;border-radius:26px;background:#fff;color:#073f3b;box-shadow:0 18px 45px #123c3510}
+.ht-dietitian-portrait{position:relative;width:100%;aspect-ratio:1.25;overflow:hidden;border-radius:20px;background:#d8eee8}
+.ht-dietitian-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 27%}
+.ht-dietitian-name{margin-top:25px;padding-left:17px;border-left:3px solid #d99a20}
+.ht-dietitian-name>p{color:#a8710c;font-size:9px;font-weight:750;letter-spacing:1.3px;text-transform:uppercase}
+.ht-dietitian-name h3{margin-top:7px;font-size:29px;font-weight:750;line-height:1.2;letter-spacing:-.8px}
+.ht-dietitian-name strong{display:block;margin-top:7px;color:#176c65;font-size:12px;font-weight:700}
+.ht-dietitian-card>p{margin-top:23px;color:#557571;font-size:13px;line-height:1.9}
+.ht-aftercare-details{display:grid;grid-template-rows:1fr auto;gap:18px}
+.ht-expertise-card{padding:31px;border:1px solid #c9dfda;border-radius:26px;background:#fff;box-shadow:0 18px 45px #123c3510}
+.ht-aftercare-label{color:#e0a83c;font-size:9px;font-weight:750;letter-spacing:1.5px;text-transform:uppercase}
+.ht-expertise-card h3{max-width:590px;margin-top:8px;font-size:24px;font-weight:700;line-height:1.35;letter-spacing:-.6px;color:#073f3b}
+.ht-expertise-card ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:24px 0 0;padding:0;list-style:none}
+.ht-expertise-card li{position:relative;padding-left:25px;color:#496963;font-size:12px;line-height:1.65}
+.ht-expertise-card li::before{content:'✓';position:absolute;left:0;top:1px;display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:#dff0ec;color:#176c65;font-size:9px;font-weight:800}
+.ht-seven-day-care{display:grid;grid-template-columns:112px 1fr;align-items:center;gap:24px;padding:23px 27px;border:1px solid #c5ded8;border-radius:23px;background:#dff0ec;color:#073f3b}
+.ht-seven-day-care>span{display:grid;place-items:center;align-content:center;width:100px;height:100px;border-radius:50%;background:#fff;color:#176c65;font-size:11px;font-weight:750;letter-spacing:1px;text-transform:uppercase;box-shadow:0 10px 25px #073f3b0e}
+.ht-seven-day-care>span strong{display:block;font-size:40px;line-height:1;font-weight:800}
+.ht-seven-day-care h3{margin-top:6px;font-size:20px;font-weight:700;line-height:1.35;letter-spacing:-.45px}
+.ht-seven-day-care div>p:last-child{margin-top:8px;color:#557571;font-size:12px;line-height:1.75}
+@media(max-width:900px){.ht-aftercare-intro{grid-template-columns:1fr;align-items:start;gap:24px}.ht-aftercare-intro>p{max-width:720px}.ht-aftercare-grid{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}.ht-expertise-card ul{grid-template-columns:1fr}.ht-seven-day-care{grid-template-columns:90px 1fr}.ht-seven-day-care>span{width:82px;height:82px}.ht-seven-day-care>span strong{font-size:33px}}
+@media(max-width:680px){.ht-aftercare-grid{grid-template-columns:1fr}.ht-dietitian-card{display:grid;grid-template-columns:132px 1fr;gap:0 20px}.ht-dietitian-portrait{grid-row:1/3;width:132px;height:148px;aspect-ratio:auto}.ht-dietitian-name{align-self:center;margin-top:0}.ht-dietitian-card>p{grid-column:1/-1}.ht-expertise-card ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.ht-aftercare-intro{padding-bottom:30px}.ht-aftercare-intro h2{font-size:30px;letter-spacing:-1px}.ht-aftercare-intro h2 br{display:none}.ht-aftercare-intro>p{font-size:13px}.ht-aftercare-grid{margin-top:26px}.ht-dietitian-card{display:block;padding:23px}.ht-dietitian-portrait{width:100%;height:auto;aspect-ratio:1.18}.ht-dietitian-name{margin-top:21px}.ht-dietitian-card>p{font-size:13px}.ht-expertise-card{padding:24px 21px}.ht-expertise-card h3{font-size:21px}.ht-expertise-card ul{grid-template-columns:1fr;gap:10px}.ht-seven-day-care{grid-template-columns:1fr;gap:17px;padding:22px}.ht-seven-day-care>span{width:76px;height:76px}.ht-seven-day-care h3{font-size:19px}}
+@media print{.ht-aftercare{background:#fff;color:#073f3b}.ht-aftercare-intro h2,.ht-expertise-card h3{color:#073f3b}.ht-aftercare-intro>p,.ht-expertise-card li{color:#425f5a}.ht-aftercare-grid{grid-template-columns:1fr 1.5fr}.ht-expertise-card{background:#fff}.ht-dietitian-card,.ht-expertise-card,.ht-seven-day-care{break-inside:avoid}}

@@ -1,0 +1,460 @@
+/* Shared Hello Teeth styling, inspired by the supplied clinic reference. */
+:root {
+  --ink: #073f3b;
+  --navy: #073f3b;
+  --green: #073f3b;
+  --sage: #176c65;
+  --sage-light: #e7f5f2;
+  --cream: #ffffff;
+  --paper: #f2f8f6;
+  --gold: #d99a20;
+  --muted: #5d7572;
+  --line: #d7e7e3;
+  --sans: 'Inter', Arial, sans-serif;
+  --serif: 'Inter', Arial, sans-serif;
+}
+
+html { scroll-padding-top: 100px; }
+body { background: #fff; color: var(--ink); font-family: var(--sans); }
+.wrap { width: min(1140px, calc(100% - 80px)); }
+h1, h2, h3, h4 { font-family: var(--sans); font-weight: 700; }
+h1, h2 { letter-spacing: -1.7px; }
+h2 em, .subpage h1 em { font-style: normal; font-weight: 700; color: var(--sage); }
+.eyebrow { color: var(--sage); font-size: 11px; font-weight: 700; letter-spacing: 1.6px; }
+.button {
+  min-height: 49px;
+  padding: 14px 23px;
+  gap: 16px;
+  border-radius: 9px;
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: none;
+}
+.button:hover { background: #176c65; border-color: #176c65; box-shadow: 0 6px 18px #073f3b14; }
+.button-light { background: #fff; border-color: #fff; color: var(--green); }
+.button-light:hover { background: #e7f5f2; border-color: #e7f5f2; color: var(--green); }
+.text-link { font-size: 13px; font-weight: 600; }
+button:focus-visible, a:focus-visible, summary:focus-visible,
+input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+
+/* Compact contact strip and the existing accessible navigation. */
+.announcement { display: none; }
+.topbar-inner { display: flex; align-items: center; gap: 25px; min-height: 36px; padding-block: 7px; }
+.topbar-inner a { display: inline-flex; align-items: center; gap: 7px; line-height: 1.5; }
+.topbar-inner a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.topbar-inner .icon { width: 13px; height: 13px; color: #9dcfc2; }
+.topbar-tagline { margin-left: auto; color: #d0e5e0; }
+.site-header { background: #fffffff7; border-bottom: 1px solid #e8f0ee; }
+.site-header.is-scrolled { border-color: var(--line); box-shadow: 0 5px 22px #073f3b09; }
+.header-inner { height: 82px; gap: 24px; }
+.brand { gap: 10px; }
+.brand-mark { width: 44px; height: 46px; border-radius: 10px; mix-blend-mode: normal; }
+.brand-type { color: var(--green); font-size: 24px; font-weight: 750; letter-spacing: -1px; }
+.brand-type small { margin-top: 4px; color: #57746d; font-size: 6.5px; letter-spacing: 1.45px; }
+#main-nav { gap: 22px; }
+#main-nav > a:not(.button) { color: #345b55; font-size: 11px; font-weight: 550; white-space: nowrap; }
+#main-nav > a[aria-current="page"]:not(.button) { padding: 8px 0; background: none; border-radius: 0; color: var(--green); font-weight: 750; }
+#main-nav > a:not(.button)::after { background: var(--gold); }
+#main-nav > .button { min-height: 42px; padding: 11px 16px; gap: 9px; background: var(--gold); border-color: var(--gold); color: #173f35; font-size: 11px; font-weight: 700; }
+#main-nav > .button:hover { background: #e8b245; border-color: #e8b245; }
+#main-nav > .button .icon { width: 15px; height: 15px; }
+#main-nav > a.consultation-nav-link { display: flex; align-items: center; gap: 7px; padding: 8px 10px; border: 1px solid #bcd8d0; border-radius: 999px; color: var(--green); font-weight: 700; }
+#main-nav > a.consultation-nav-link::after { display: none; }
+.consultation-nav-link .icon { width: 16px; height: 16px; flex: 0 0 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+#main-nav > a.consultation-nav-link:hover { border-color: var(--green); background: #e7f5f2; }
+#main-nav > a.consultation-nav-link[aria-current="page"] { background: var(--green); border-color: var(--green); color: #fff; }
+.menu-toggle { border-radius: 9px; }
+.menu-toggle:hover { background: #e7f5f2; }
+.menu-toggle span { background: var(--green); }
+
+/* Interior pages follow the same white and mint surfaces as the home page. */
+.page-ribbon, .page-contact .page-ribbon,
+.page-international .page-ribbon, .page-faqs .page-ribbon { background: #e7f5f2; border-color: #d7e9e3; }
+.page-ribbon::after { border-color: #beddd3; }
+.page-ribbon-inner { min-height: 192px; padding-block: 35px; }
+.page-ribbon-inner > div { min-width: 0; }
+.page-ribbon-title { margin-top: 16px; color: var(--green); font-size: clamp(30px, 3.5vw, 44px); font-weight: 750; letter-spacing: -1.7px; }
+.breadcrumb-trail { color: #54736a; font-size: 11px; flex-wrap: wrap; }
+.ribbon-signature { color: #397e6b; letter-spacing: 1.7px; }
+.ribbon-signature .icon { color: #78ac98; }
+.subpage .section-space, .subpage .philosophy-section { padding-block: 80px; }
+.subpage h1,
+.subpage .philosophy-copy h1,
+.subpage .international-copy h1,
+.subpage .faq-grid h1,
+.subpage .inquiry-copy h1,
+.treatment-main h1 { font-size: clamp(32px, 3.5vw, 46px); font-weight: 750; line-height: 1.18; letter-spacing: -1.7px; }
+.subpage .section-heading { align-items: end; gap: 35px; }
+.subpage .section-heading > p { font-size: 14px; line-height: 1.8; }
+.subpage .section-heading .eyebrow { margin-bottom: 16px; }
+.philosophy-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 65px; }
+.philosophy-copy, .inquiry-copy, .inquiry-panel, .treatment-main,
+.international-copy, .faq-grid > div { min-width: 0; }
+.brand-art { min-height: 460px; border-radius: 28px; background: #e7f5f2; box-shadow: none; }
+.brand-art-line { border-color: #bedbd1; }
+.brand-art > p { color: var(--green); font-weight: 650; font-size: 29px; }
+.brand-art > p em { color: #176c65; font-style: normal; }
+.art-eyebrow { color: #427966; }
+.art-flower { color: #458d76; }
+.logo-medallion { width: min(300px, 84%); height: auto; aspect-ratio: 1; }
+.philosophy-copy > p:not(.eyebrow), .values-list p { font-size: 14px; line-height: 1.9; color: var(--muted); }
+.values-list { margin-block: 27px; }
+.values-list > div { padding-block: 12px; border-color: var(--line); }
+.values-list > div > span { color: #176c65; background: #e7f5f2; }
+.values-list strong { color: var(--green); }
+.care-grid { gap: 22px; }
+.care-card { border: 1px solid var(--line); border-radius: 24px; padding: 30px; background: #fff; box-shadow: 0 7px 24px #073f3b05; transition: transform .25s, background-color .25s, border-color .25s, box-shadow .25s, color .25s; }
+.care-card:nth-child(2), .care-card:nth-child(6) { background: #e7f5f2; }
+.care-card:hover, .care-card:focus-visible { color: #fff; background: #176c65; border-color: #176c65; box-shadow: 0 17px 34px #073f3b29; transform: translateY(-7px); }
+.care-card:hover h3, .care-card:focus-visible h3 { color: #fff; }
+.care-card:hover > p, .care-card:focus-visible > p { color: #e5f4f0; }
+.care-card:hover .service-number, .care-card:focus-visible .service-number { color: #d9eee8; }
+.care-card:hover .service-icon, .care-card:focus-visible .service-icon { color: #176c65; background: #fff; }
+.care-card:hover .card-bottom, .care-card:focus-visible .card-bottom { color: #fff; border-color: #81b7a9; }
+.service-top { margin-bottom: 24px; }
+.service-icon { box-sizing: border-box; width: 58px; height: 58px; padding: 14px; border-radius: 17px; background: #e7f5f2; color: var(--green); }
+.care-card:nth-child(2) .service-icon, .care-card:nth-child(6) .service-icon { background: #fff; }
+.care-card h3 { font-size: 22px; font-weight: 700; line-height: 1.35; letter-spacing: -.5px; }
+.care-card > p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.card-bottom { font-size: 12px; font-weight: 600; color: #176c65; border-color: #cce1da; }
+.international-card { border-radius: 28px; background: #073f3b; box-shadow: none; }
+.international-copy { padding: 48px 0 48px 42px; }
+.subpage .international-copy h1 { color: #fff; }
+.subpage .international-copy h1 em { color: #b7ddcd; }
+.international-copy > p:not(.eyebrow) { color: #d0e6de; font-size: 14px; line-height: 1.9; }
+.international-copy .eyebrow, .international-note { color: #bbdcd0; }
+.international-copy .button { white-space: normal; }
+.journey-steps { gap: 22px; }
+.journey-steps > div { padding: 28px; background: #f0f8f5; border: 1px solid #d9e9e2; border-radius: 22px; }
+.journey-steps h3 { font-size: 22px; font-weight: 700; }
+.journey-steps p { font-size: 14px; color: var(--muted); line-height: 1.8; }
+.step-number { color: var(--sage); }
+.faq-section { background: #fff; }
+.faq-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 60px; }
+.faq-grid > div > p:not(.eyebrow) { color: var(--muted); font-size: 14px; }
+.faq-list { gap: 14px; }
+.faq-list details { padding-inline: 24px; border-color: #d7e7e0; border-radius: 18px; background: #fff; }
+.faq-list details[open] { background: #edf7f2; border-color: #bedacc; }
+.faq-list summary { font-size: 14px; font-weight: 600; padding-block: 23px; }
+.faq-list details > p { color: var(--muted); font-size: 14px; line-height: 1.85; }
+.inquiry-section { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 60px; }
+.inquiry-copy > p:not(.eyebrow) { color: var(--muted); font-size: 15px; line-height: 1.8; }
+.inquiry-points > span { font-size: 13px; }
+.inquiry-panel { border: 1px solid #d5e6de; border-radius: 24px; background: #f8fcfa; padding: 28px; box-shadow: 0 14px 40px #073f3b06; }
+.inquiry-panel-heading h3 { font-size: 25px; font-weight: 700; }
+.inquiry-panel-heading p { color: var(--muted); font-size: 12px; }
+.inquiry-panel iframe { max-width: 100%; border-radius: 12px; background: #fff; }
+.consultation-form-launch { display: grid; justify-items: center; padding: 50px 22px 44px; text-align: center; }
+.consultation-form-emblem { display: grid; place-items: center; width: 70px; height: 70px; border-radius: 50%; background: #e2f3ef; color: var(--green); }
+.consultation-form-emblem .icon { width: 29px; height: 29px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.consultation-form-launch h4 { margin-top: 23px; color: var(--green); font-size: 27px; font-weight: 700; letter-spacing: -.8px; line-height: 1.25; }
+.consultation-form-launch p { max-width: 390px; margin-top: 14px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.consultation-form-launch .consultation-form-button { margin-top: 27px; color: #fff; }
+.page-consultation .inquiry-section { align-items: stretch; }
+.page-consultation .inquiry-panel { display: flex; flex-direction: column; margin-top: 34px; }
+.page-consultation .consultation-form-launch { flex: 1; align-content: center; }
+.page-consultation .form-privacy { margin-top: auto; }
+.clinic-contact { padding: 25px; border: 1px solid #d4e8dd; border-radius: 22px; background: #eaf6ef; }
+.clinic-contact h3 { font-size: 19px; font-weight: 700; }
+.clinic-contact > p { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.clinic-contact > a { font-size: 13px; overflow-wrap: anywhere; }
+.page-cta { padding: 33px 36px; margin-bottom: 80px; background: #e7f5f2; border-color: #d0e4d9; border-radius: 24px; gap: 25px; }
+.page-cta h2 { font-size: clamp(28px, 3vw, 37px); font-weight: 700; }
+.page-cta .button { flex-shrink: 0; }
+.treatment-page { gap: 65px; grid-template-columns: minmax(0, 1.3fr) minmax(0, .9fr); padding-block: 80px; }
+.treatment-intro { font-size: 15px; color: var(--muted); }
+.treatment-main h2 { font-size: 25px; font-weight: 700; }
+.treatment-main li { font-size: 14px; border-color: #d7e7df; }
+.treatment-disclaimer { font-size: 13px; }
+.treatment-aside { min-width: 0; min-height: 420px; border: 1px solid #cde2d7; border-radius: 28px; background: #e7f5f2; box-shadow: none; }
+.treatment-aside p { font-size: 31px; font-weight: 700; }
+.treatment-aside p em { font-style: normal; }
+
+/* The footer uses the reference's deep teal with clear clinic links. */
+.redesigned-footer { color: #fff; background: #073f3b; border-top: none; }
+.footer-layout { grid-template-columns: minmax(0, 1.2fr) minmax(0, .7fr) minmax(0, .9fr) minmax(0, 1.1fr); gap: 38px; padding-block: 64px; }
+.footer-about .brand-type { color: #fff; font-size: 25px; }
+.footer-about .brand-type small { color: #c0ded0; }
+.footer-about .brand-mark { width: 44px; height: 46px; }
+.footer-about > p { color: #bfdbd2; font-size: 13px; line-height: 1.9; }
+.footer-mini-title { color: #e2f1e9; font-size: 10px; }
+.footer-connect > a { color: #e2f1e9; border-color: #488478; background: #15534b; }
+.footer-connect > a:hover { color: var(--green); background: #e7f5f2; }
+.footer-connect .footer-instagram .icon { fill: none; stroke: currentColor; stroke-width: 1.7; }
+.footer-connect .footer-facebook .icon { fill: currentColor; stroke: none; }
+.clinic-hours { align-items: flex-start; padding-top: 17px; border-top: 1px solid #cadeda; }
+.clinic-hours strong { color: var(--green); }
+.clinic-socials { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.clinic-socials a { padding: 9px 13px; border: 1px solid #c5ded7; border-radius: 999px; color: var(--green); font-size: 12px; font-weight: 650; }
+.clinic-socials a:hover { background: var(--green); border-color: var(--green); color: #fff; }
+.footer-column h2 { color: #fff; font-size: 13px; font-weight: 700; letter-spacing: .4px; }
+.footer-column h2::after { background: var(--gold); }
+.footer-column > a, .footer-location > p { color: #bfdbd2; font-size: 12px; line-height: 1.8; }
+.footer-column > a:hover { color: #fff; }
+.footer-contact-icon { background: #15534b; color: #b2d8c6; }
+.footer-column .footer-directions { color: #e0ebcd; font-size: 12px; }
+.footer-column > .footer-phone { display: flex; align-items: flex-start; gap: 13px; width: auto; margin: 3px 0 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: #bfdbd2; line-height: 1.8; text-decoration: none; transition: color .2s ease; }
+.footer-phone-icon { display: grid; place-items: center; width: 38px; height: 38px; flex: 0 0 38px; border-radius: 50%; background: #15534b; color: #b2d8c6; }
+.footer-phone-icon .icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.footer-phone-copy { display: block; padding-top: 5px; }
+.footer-phone-copy strong { color: #bfdbd2; font-size: 12px; font-weight: 500; line-height: 1.8; white-space: nowrap; transition: color .2s ease; }
+.footer-column > .footer-phone:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.footer-column > .footer-phone:hover .footer-phone-copy strong { color: #fff; }
+.footer-legal { border-top: 1px solid #30665a; background: #073f3b; }
+.footer-legal > .wrap { padding-block: 18px; gap: 25px; }
+.footer-legal p, .footer-legal button, .footer-legal a { color: #c1d9cf; font-size: 11px; }
+.footer-legal button:hover, .footer-legal a:hover { color: #fff; }
+
+/* Keep the automated guide readable within the shared visual system. */
+dialog { border-color: #c5ded1; border-radius: 24px; background: #fff; }
+dialog h2 { font-weight: 700; }
+.chat-launcher { background: #073f3b; border-color: #70a58e; color: #fff; font-size: 12px; padding: 12px 18px; box-shadow: 0 8px 24px #073f3b25; }
+.chat-launcher:hover { background: #176c65; }
+.dental-chat { color: var(--green); background: #f8fcfa; border-color: #c6ded1; border-radius: 22px; }
+.chat-header { background: #073f3b; color: #fff; }
+.chat-header h2 { color: inherit; font-size: 23px; font-weight: 700; }
+.chat-header p { font-size: 11px; color: #c5e0d3; }
+.chat-avatar { color: #c1ddc1; }
+.dental-chat .chat-disclosure { background: #edf7f0; border-color: #d5e7db; color: #46675b; font-size: 11px; }
+.chat-question-browser { background: #f4faf6; border-color: #d5e7db; font-size: 12px; }
+.chat-question-browser label { font-size: 11px; }
+.chat-question-browser select { color: var(--green); border-color: #bbd5c7; }
+.chat-message { border-color: #d5e7db; }
+.chat-message p { font-size: 13px; }
+.chat-speaker { color: #457057; font-size: 10px; }
+.chat-message > a { font-size: 12px; color: #176c65; }
+.chat-user { background: #e2f2e8; border-color: #c5dfcf; }
+.chat-topics { border-color: #d5e7db; }
+.chat-topics button { border-color: #c5dccd; color: var(--green); background: #fff; font-size: 11px; }
+.chat-topics button:hover { background: #e2f2e8; }
+.chat-composer input { border-color: #b9d5c4; color: var(--green); }
+.chat-composer button { background: #073f3b; }
+.chat-bottom, .chat-bottom button { color: #476b59; font-size: 11px; }
+
+@media (max-width: 1150px) {
+  #main-nav { gap: 15px; }
+  .header-inner { gap: 20px; }
+  .brand-type { font-size: 22px; }
+  .footer-layout { gap: 25px; }
+  .footer-about .brand-type { font-size: 23px; }
+  .philosophy-grid, .inquiry-section, .treatment-page { gap: 40px; }
+  .care-card { padding: 25px; }
+  .care-card h3 { font-size: 21px; }
+}
+
+@media (max-width: 1000px) {
+  .header-inner { height: 76px; }
+  .menu-toggle { display: block; flex-shrink: 0; }
+  #main-nav { display: none; top: 76px; left: 0; right: 0; max-height: calc(100dvh - 76px); overflow-y: auto; padding: 14px 40px 25px; background: #fff; border-color: var(--line); gap: 0; box-shadow: 0 12px 22px #073f3b0b; }
+  #main-nav.is-open { display: flex; }
+  #main-nav > a:not(.button), #main-nav > a[aria-current="page"]:not(.button) { padding: 14px 12px; border-radius: 7px; font-size: 14px; }
+  #main-nav > a.consultation-nav-link { margin-top: 10px; border: 1px solid #bcd8d0; }
+  #main-nav > a.consultation-nav-link[aria-current="page"] { background: var(--green); border-color: var(--green); color: #fff; }
+  #main-nav > a[aria-current="page"]:not(.button) { background: #e7f5f2; }
+  #main-nav > .button { margin-top: 16px; min-height: 46px; font-size: 13px; }
+  .subpage .section-space, .subpage .philosophy-section { padding-block: 62px; }
+  .subpage h1, .subpage .philosophy-copy h1, .subpage .international-copy h1,
+  .subpage .faq-grid h1, .subpage .inquiry-copy h1, .treatment-main h1 { font-size: 36px; }
+  .brand-art { min-height: 420px; }
+  .care-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .faq-grid { gap: 35px; }
+  .international-copy { padding: 38px 0 38px 30px; }
+  .journey-steps { gap: 17px; }
+  .journey-steps > div { padding: 23px; }
+  .journey-steps h3 { font-size: 20px; }
+  .inquiry-section { gap: 35px; }
+  .inquiry-panel { padding: 22px; }
+  .treatment-page { padding-block: 62px; }
+  .treatment-aside { min-height: 360px; }
+  .footer-layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 35px 55px; }
+  .footer-about { grid-row: span 2; }
+  .footer-find { grid-column: 1 / -1; }
+  .footer-column > a, .footer-location > p { font-size: 13px; }
+  .footer-about > p { max-width: 100%; }
+}
+
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 40px); }
+  .announcement { min-height: 34px; }
+  .topbar-inner { min-height: 34px; gap: 14px; justify-content: space-between; font-size: 10px; }
+  .topbar-tagline { display: none; }
+  .header-inner { height: 74px; }
+  .brand-type { font-size: 23px; }
+  .brand-mark { width: 41px; height: 43px; }
+  #main-nav { top: 74px; max-height: calc(100dvh - 74px); padding-inline: 20px; }
+  .button { padding: 13px 20px; min-height: 48px; }
+  .page-ribbon-inner { min-height: 159px; padding-block: 28px; }
+  .page-ribbon-title { font-size: 32px; line-height: 1.2; letter-spacing: -1px; }
+  .breadcrumb-trail { font-size: 10px; }
+  .subpage .section-space, .subpage .philosophy-section { padding-block: 48px; }
+  .subpage h1, .subpage .philosophy-copy h1, .subpage .international-copy h1,
+  .subpage .faq-grid h1, .subpage .inquiry-copy h1, .treatment-main h1 { font-size: clamp(29px, 5.5vw, 36px); letter-spacing: -1.1px; }
+  .subpage .section-heading { align-items: start; gap: 20px; }
+  .subpage .section-heading > p { font-size: 14px; }
+  .philosophy-grid, .faq-grid, .inquiry-section, .treatment-page { grid-template-columns: minmax(0, 1fr); gap: 35px; }
+  .brand-art { min-height: 420px; border-radius: 24px; }
+  .brand-art > p { font-size: 28px; }
+  .logo-medallion { width: min(275px, 78%); }
+  .philosophy-copy > p:not(.eyebrow), .values-list p { font-size: 14px; }
+  .care-grid { gap: 17px; }
+  .care-card { padding: 23px; border-radius: 22px; }
+  .care-card h3 { font-size: 21px; }
+  .care-card > p { font-size: 14px; }
+  .card-bottom { font-size: 12px; }
+  .service-icon { width: 54px; height: 54px; padding: 13px; }
+  .international-copy { padding: 34px 25px 0; }
+  .international-copy > p:not(.eyebrow) { font-size: 14px; }
+  .journey-steps { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .journey-steps h3 { font-size: 23px; }
+  .journey-steps p { font-size: 14px; }
+  .faq-list details { padding-inline: 20px; }
+  .faq-list summary { font-size: 14px; }
+  .faq-list details > p { font-size: 14px; }
+  .inquiry-copy > p:not(.eyebrow) { font-size: 14px; }
+  .inquiry-panel { padding: 22px; }
+  .clinic-contact { padding: 23px; }
+  .page-cta { padding: 27px; margin-bottom: 48px; gap: 23px; border-radius: 22px; }
+  .page-cta h2 { font-size: 29px; }
+  .page-cta .button { white-space: normal; }
+  .treatment-page { padding-block: 48px; }
+  .treatment-intro, .treatment-main li { font-size: 14px; }
+  .treatment-aside { min-height: 300px; padding: 30px; border-radius: 24px; }
+  .treatment-aside p { font-size: 29px; }
+        .footer-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 35px 24px; padding-block: 45px; }
+  .footer-about { grid-column: 1 / -1; grid-row: auto; }
+  .footer-about .brand-type { font-size: 27px; }
+  .footer-about > p { font-size: 14px; max-width: 470px; }
+  .footer-column > a { font-size: 12px; }
+  .footer-column h2 { font-size: 12px; }
+  .footer-find { display: flex; grid-column: 1 / -1; }
+  .footer-location > p { font-size: 13px; }
+  .footer-legal > .wrap { padding-block: 20px 78px; gap: 16px; }
+  .footer-legal p { font-size: 10px; }
+  .footer-legal button, .footer-legal a { font-size: 11px; }
+}
+
+@media (max-width: 520px) {
+  .care-grid { grid-template-columns: minmax(0, 1fr); }
+  .topbar-inner { gap: 10px; font-size: 9px; }
+  .topbar-inner a { gap: 5px; }
+  .topbar-inner .icon { width: 11px; height: 11px; }
+  .brand-art { min-height: 380px; }
+  .page-ribbon-title { font-size: 29px; }
+  .inquiry-panel { padding: 18px; }
+  .page-consultation .inquiry-panel { margin-top: 0; }
+  .consultation-form-launch { padding: 38px 8px 34px; }
+  .consultation-form-launch h4 { font-size: 24px; }
+  .page-cta { padding: 24px; }
+    .chat-launcher { right: 14px; bottom: 14px; padding: 11px 15px; font-size: 11px; }
+}
+
+@media (max-width: 360px) {
+  .brand-type { font-size: 21px; }
+  .brand-type small { font-size: 5.8px; letter-spacing: 1.2px; }
+  .topbar-inner { gap: 7px; font-size: 8.5px; }
+  .page-ribbon-title { font-size: 26px; }
+      .footer-layout { column-gap: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button:hover, .care-card:hover, .footer-connect > a:hover, .footer-phone:hover { transform: none; }
+}
+
+@media (max-width: 1000px) {
+  .footer-find .footer-phone { grid-column: 1; grid-row: 4; }
+}
+
+@media (max-width: 760px) {
+  .footer-column > .footer-phone { width: auto; max-width: none; margin-left: 0; }
+}
+
+@media print {
+  .announcement, .site-header { display: none; }
+  .subpage .section-space, .subpage .philosophy-section, .treatment-page { padding-block: 20px; }
+}
+
+/* Branded opening and between-page transition. */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 45%, #237a71 0, #0d5751 38%, #073f3b 76%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: opacity .34s ease, visibility 0s linear 0s;
+}
+.page-transition::before,
+.page-transition::after {
+  content: "";
+  position: absolute;
+  width: 34vmin;
+  aspect-ratio: 1;
+  border: 1px solid #b8e0d647;
+  border-radius: 50%;
+  animation: page-transition-ring 2.2s ease-in-out infinite;
+}
+.page-transition::after { width: 54vmin; animation-delay: -.85s; }
+.page-transition.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .34s ease, visibility 0s linear .34s;
+}
+.page-transition-mark {
+  position: relative;
+  z-index: 1;
+  width: 116px;
+  filter: drop-shadow(0 18px 22px #022c296b);
+  animation: page-transition-float 1.15s ease-in-out infinite alternate;
+}
+.page-transition-mark svg { display: block; width: 100%; height: auto; overflow: visible; }
+.page-transition-tooth { fill: #fff; stroke: #d6eee8; stroke-width: 1.6; }
+.page-transition-shine { fill: none; stroke: #d9eee9; stroke-width: 4; stroke-linecap: round; }
+.page-transition-mini-tooth { fill: none; stroke: #d79b2e; stroke-width: 3.5; stroke-linejoin: round; }
+.page-transition-word {
+  fill: #073f3b;
+  font: 650 12px Inter, Arial, sans-serif;
+  text-anchor: middle;
+  letter-spacing: .3px;
+}
+.page-transition-word-strong { font-size: 15px; font-weight: 800; letter-spacing: -.2px; }
+.page-transition-orbit {
+  position: absolute;
+  inset: -13px;
+  border: 1px solid #d9eee97d;
+  border-radius: 50%;
+  animation: page-transition-spin 2.3s linear infinite;
+}
+.page-transition-orbit::before,
+.page-transition-orbit::after {
+  content: "✦";
+  position: absolute;
+  color: #e0a83c;
+  font-size: 13px;
+  line-height: 1;
+  text-shadow: 0 2px 8px #073f3b66;
+}
+.page-transition-orbit::before { top: 8px; left: 7px; }
+.page-transition-orbit::after { right: 4px; bottom: 18px; font-size: 9px; }
+body.page-is-transitioning { cursor: progress; overflow: hidden; }
+@keyframes page-transition-float { from { transform: translateY(4px) scale(.98); } to { transform: translateY(-5px) scale(1.02); } }
+@keyframes page-transition-spin { to { transform: rotate(360deg); } }
+@keyframes page-transition-ring { 0%, 100% { transform: scale(.88); opacity: .22; } 50% { transform: scale(1.04); opacity: .55; } }
+@media (max-width: 520px) { .page-transition-mark { width: 102px; } }
+@media (prefers-reduced-motion: reduce) {
+  .page-transition,
+  .page-transition.is-hidden { transition-duration: .08s; }
+  .page-transition-mark,
+  .page-transition-orbit,
+  .page-transition::before,
+  .page-transition::after { animation: none; }
+}
+@media print { .page-transition { display: none !important; } }
