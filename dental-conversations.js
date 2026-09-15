@@ -5,7 +5,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(Guide,groups){
   'use strict';
   const home=['Book Appointment','Dental Emergency','Tooth Pain','Treatments','Treatment Cost','Clinic Location','Clinic Timings','Talk to Receptionist'];
-  const inquiry=['Open appointment inquiry form','contact.html'];
+  const inquiry=['Open appointment inquiry form','contact'];
   const normalize=s=>s.toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
   const seeds={'Check-ups & cleaning':'Daily care','Fillings':'Fillings','Root canals':'Root canal treatment','Crowns & bridges':'Dental crowns','Implants & dentures':'Dental implants','Braces & aligners':'Braces','Cosmetic dentistry':'Teeth whitening','Gum care':'Gums','Children’s dentistry':'Children’s dentistry'};
   function create(config={}){

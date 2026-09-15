@@ -6,8 +6,8 @@ for(const question of ['Explore treatments','explore treatment','What treatments
  test('Treatment menu: '+question,()=>{
   const r=create(config).answer(question);
   assert.equal(r.intent,'information');assert.match(r.message,/everyday care/);
-  assert.ok(r.links.some(([,href])=>href==='treatments.html'));
-  assert.ok(!r.links.some(([,href])=>href==='contact.html'));
+  assert.ok(r.links.some(([,href])=>href==='treatments'));
+  assert.ok(!r.links.some(([,href])=>href==='contact'));
  });
 }
 for(const [q,topic] of [['What is a root canal?','root'],['What are root canals?','root'],['What does a dentist do for implants?','implants'],['How do aligners work?','aligners'],['Braces','braces'],['Teeth whitening','whitening'],['My gums bleed when brushing','gums'],['Bad breath','breath'],['Cold water hurts my tooth','sensitivity'],['My teeth are hurting','pain'],['mere daant me dard hai','pain'],['My child has tooth pain','pain'],['Brushing tips','hygiene']]){

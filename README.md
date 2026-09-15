@@ -4,7 +4,7 @@ A responsive, frontend-only dental clinic website built with HTML, CSS, and vani
 
 ## Website pages
 
-Home (`index.html`), About (`about.html`), Treatments (`treatments.html`), International Patients (`international.html`), Blogs (`blogs.html`), FAQs (`faqs.html`), and Contact & Inquiries (`contact.html`) are separate pages. Each treatment has its own `care-*.html` detail page. This copy lives in `Project/hello teeth`; open its `index.html` to see the redesign.
+Home (`index.html`), About (`about.html`), Treatments (`treatments.html`), International Patients (`international.html`), Blogs (`blogs.html`), FAQs (`faqs.html`), and Contact & Inquiries (`contact.html`) are separate source files. Each treatment has its own `care-*.html` detail file. On GitHub Pages, Jekyll permalinks expose these pages through clean public URLs such as `/about`, `/treatments`, and `/blogs`. This copy lives in `Project/Hello Teeth`; open its `index.html` to see the redesign.
 
 ## Reference design
 

@@ -4,7 +4,7 @@
   dialog.id = 'dental-chat';
   dialog.className = 'dental-chat';
   dialog.setAttribute('aria-labelledby', 'chat-title');
-  dialog.innerHTML = `<header class="chat-header"><span class="chat-avatar" aria-hidden="true">✳</span><div><h2 id="chat-title">Hello, smile.</h2><p>Hello Teeth · automated dental guide</p></div><button type="button" class="chat-close" aria-label="Close dental chat">×</button></header><p class="chat-disclosure">General information, not diagnosis or live staff chat. Messages stay on this page and are not sent to the clinic.</p><div class="chat-log" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions"></div><div class="chat-topics" aria-label="Suggested questions"></div><form class="chat-composer"><label for="chat-question" class="sr-only">Your dental question</label><input id="chat-question" name="question" maxlength="600" autocomplete="off" placeholder="Ask about your smile…" required><button type="submit" aria-label="Send question">↑</button></form><div class="chat-bottom"><button type="button" class="chat-reset">Clear chat</button><a href="contact.html">Contact the clinic ↗</a></div>`;
+  dialog.innerHTML = `<header class="chat-header"><span class="chat-avatar" aria-hidden="true">✳</span><div><h2 id="chat-title">Hello, smile.</h2><p>Hello Teeth · automated dental guide</p></div><button type="button" class="chat-close" aria-label="Close dental chat">×</button></header><p class="chat-disclosure">General information, not diagnosis or live staff chat. Messages stay on this page and are not sent to the clinic.</p><div class="chat-log" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions"></div><div class="chat-topics" aria-label="Suggested questions"></div><form class="chat-composer"><label for="chat-question" class="sr-only">Your dental question</label><input id="chat-question" name="question" maxlength="600" autocomplete="off" placeholder="Ask about your smile…" required><button type="submit" aria-label="Send question">↑</button></form><div class="chat-bottom"><button type="button" class="chat-reset">Clear chat</button><a href="contact">Contact the clinic ↗</a></div>`;
   document.body.append(dialog);
   const launcher = document.createElement('button');
   launcher.type = 'button';
@@ -70,7 +70,7 @@
   function reset() {
     guide.reset(); log.replaceChildren(); input.value = ''; browser.open = false;
     categorySelect.value = ''; questionSelect.replaceChildren(new Option('Select a topic first','')); questionSelect.disabled = true;
-    append('bot', 'Hello! How can I help you? If you’d like to contact the doctor, please fill out the contact form.', [['Open contact form', 'contact.html']]);
+    append('bot', 'Hello! How can I help you? If you’d like to contact the doctor, please fill out the contact form.', [['Open contact form', 'contact']]);
     suggestions(defaultTopics);
   }
   function send(value) {

@@ -5,54 +5,54 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const topics = {
-    root: {title:'root canal treatment', pattern:/\b(root\s*canals?|rct|endodont\w*)\b/, page:'care-restorative.html',
+    root: {title:'root canal treatment', pattern:/\b(root\s*canals?|rct|endodont\w*)\b/, page:'care-restorative',
       overview:'Root canal treatment removes infected tissue from inside a tooth. The dentist cleans and fills the root canals, then seals the tooth; a crown may also be needed. It aims to keep a tooth that might otherwise need removal. An examination is needed to decide if it is appropriate.',
       duration:'Root canal treatment may involve more than one appointment. The tooth involved, infection, and final restoration affect the plan. Ask whether the estimate includes a filling or crown and any further visits.',
       discomfort:'A dentist usually uses local anaesthetic for root canal treatment. Tell them if you feel discomfort during the procedure. Soreness can happen afterward; contact the treating dentist if symptoms worsen or swelling develops.',
       care:'Follow the treating dentist’s instructions and complete any planned final restoration. Ask when you can chew on that tooth and when to return for review.'},
-    implants:{title:'dental implants',pattern:/\b(implants?|missing (tooth|teeth)|replace (a )?tooth)\b/,page:'care-implants.html',
+    implants:{title:'dental implants',pattern:/\b(implants?|missing (tooth|teeth)|replace (a )?tooth)\b/,page:'care-implants',
       overview:'A dental implant replaces a tooth root and supports a replacement tooth. A dentist checks your mouth and suitability before planning treatment. It is different from a bridge or a removable denture.',
       duration:'Implant treatment is planned in stages, so the surgical visit and finished replacement tooth may be separate. Healing and any additional procedures affect the timeline. Request a written schedule before making travel plans.',
       discomfort:'Ask the treating dentist how they will manage comfort during the procedure and what recovery to expect. No chat can promise a pain-free procedure or predict your recovery.',
       care:'Ask for a cleaning routine and follow-up schedule for your implant. Ongoing dental care matters after the replacement tooth is fitted.'},
-    aligners:{title:'clear aligners',pattern:/\b(aligners?|invisalign)\b/,page:'care-aligners.html',
+    aligners:{title:'clear aligners',pattern:/\b(aligners?|invisalign)\b/,page:'care-aligners',
       overview:'Clear aligners are removable orthodontic appliances used to move teeth. They are not suitable for every alignment problem. A dentist or orthodontist assesses your teeth and bite before recommending aligners or another option.',
       duration:'The duration and daily wearing schedule depend on your orthodontic plan. Ask about review visits and retainers before starting. I cannot estimate your personal timeline from a message.',
       discomfort:'Ask your dentist what pressure or soreness to expect as teeth move, and what to do if an aligner irritates your mouth. Severe or persistent pain needs a clinical review.',
       care:'Follow the prescribed wearing and cleaning instructions. Ask about meals, oral hygiene, review appointments, and retainers after treatment.'},
-    braces:{title:'braces',pattern:/\b(braces?|orthodont\w*|crooked|straighten|straight teeth)\b/,page:'care-aligners.html',
+    braces:{title:'braces',pattern:/\b(braces?|orthodont\w*|crooked|straighten|straight teeth)\b/,page:'care-aligners',
       overview:'Braces move teeth to improve alignment and how the teeth meet. Some appliances are fixed and others are removable. A dentist or orthodontist checks your bite and recommends a suitable approach.',
       duration:'Braces usually need ongoing review appointments; the full duration varies with the bite and the planned movement. Ask your orthodontist about the expected timeline and retainers afterward.',
       discomfort:'Ask about expected discomfort after fitting or adjustments. If a wire is hurting you, or pain is severe or persistent, contact the treating dental team.',
       care:'Clean carefully around braces and follow your orthodontist’s food and hygiene instructions. Keep scheduled reviews and ask what to do if a bracket or wire becomes loose.'},
-    whitening:{title:'teeth whitening',pattern:/\b(whiten\w*|yellow\w*|stain\w*|bleach\w*|white teeth|peele|peelay)\b/,page:'care-cosmetic.html',
+    whitening:{title:'teeth whitening',pattern:/\b(whiten\w*|yellow\w*|stain\w*|bleach\w*|white teeth|peele|peelay)\b/,page:'care-cosmetic',
       overview:'Professional whitening lightens the colour of natural teeth. A dentist should first check the cause of discolouration and whether whitening is suitable. Fillings, crowns, and veneers do not whiten in the same way as natural teeth.',
       duration:'The schedule depends on whether the dentist recommends treatment in the clinic or a supervised home system. Ask about the course, maintenance, and likely results for your teeth.',
       discomfort:'Whitening can cause sensitivity. Tell your dentist about existing sensitivity before treatment, and contact them if treatment causes discomfort. Avoid unverified whitening products or DIY bleaching.',
       care:'Use only the method and schedule recommended by your dental professional. Ask about sensitivity, maintenance, and the effect on existing dental restorations.'},
-    crowns:{title:'dental crowns',pattern:/\b(crowns?|tooth cap|caps for teeth)\b/,page:'care-restorative.html',
+    crowns:{title:'dental crowns',pattern:/\b(crowns?|tooth cap|caps for teeth)\b/,page:'care-restorative',
       overview:'A crown is a cover fitted over a tooth to restore its shape or strength. A dentist assesses the tooth before deciding whether a crown, filling, or another treatment is appropriate.'},
-    fillings:{title:'fillings and tooth decay',pattern:/\b(fillings?|cavit\w*|decay|hole in (my |a |the )?(tooth|teeth))\b/,page:'care-restorative.html',
+    fillings:{title:'fillings and tooth decay',pattern:/\b(fillings?|cavit\w*|decay|hole in (my |a |the )?(tooth|teeth))\b/,page:'care-restorative',
       overview:'A filling repairs a damaged area of a tooth. The depth and extent of decay affect the treatment needed. A dentist must examine the tooth; pain alone cannot tell whether a filling or a different treatment is necessary.'},
-    veneers:{title:'veneers and smile makeovers',pattern:/\b(veneers?|smile makeover|cosmetic|smile design)\b/,page:'care-cosmetic.html',
+    veneers:{title:'veneers and smile makeovers',pattern:/\b(veneers?|smile makeover|cosmetic|smile design)\b/,page:'care-cosmetic',
       overview:'Veneers cover the front surface of teeth to change their appearance. They are different from whitening or braces. Discuss the preparation involved, alternatives, maintenance, and your goals before deciding.'},
-    children:{title:'children’s dental care',pattern:/\b(child\w*|kid\w*|bab(?:y|ies)|toddler\w*|milk teeth|bach\w*)\b/,page:'care-children.html',
+    children:{title:'children’s dental care',pattern:/\b(child\w*|kid\w*|bab(?:y|ies)|toddler\w*|milk teeth|bach\w*)\b/,page:'care-children',
       overview:'Children’s care includes checking developing teeth, brushing guidance, and helping children feel comfortable at visits. Start cleaning teeth when they appear and ask a dentist for age-appropriate toothpaste and brushing guidance. Is your question about routine care or a particular symptom?'},
-    hygiene:{title:'daily brushing and cleaning',pattern:/\b(brush\w*|floss\w*|toothpaste|mouthwash|hygiene|daily care|clean\w*|scaling|tartar|plaque)\b/,page:'care-general.html',
+    hygiene:{title:'daily brushing and cleaning',pattern:/\b(brush\w*|floss\w*|toothpaste|mouthwash|hygiene|daily care|clean\w*|scaling|tartar|plaque)\b/,page:'care-general',
       overview:'Brush for about two minutes twice a day with fluoride toothpaste, including before bed. Spit out afterward rather than rinsing straight away. Clean between teeth with floss or an appropriate interdental brush. Professional cleaning removes deposits that home brushing cannot remove.',
       duration:'Brush for about two minutes each time, twice a day. Your dentist can recommend how often you need professional cleaning based on your gums and teeth.'},
-    gums:{title:'bleeding or sore gums',pattern:/\b(gums?|gingivit\w*|periodont\w*|masood\w*)\b/,page:'care-general.html',
+    gums:{title:'bleeding or sore gums',pattern:/\b(gums?|gingivit\w*|periodont\w*|masood\w*)\b/,page:'care-general',
       overview:'Bleeding, red, or sore gums can occur with gum disease and should be checked by a dentist. Keep cleaning gently rather than stopping altogether. Very swollen or painful gums, or loose adult teeth, need prompt assessment.'},
-    breath:{title:'bad breath',pattern:/\b(bad breath|halitosis|mouth (smell|odou?r)|smelly breath|badbu)\b/,page:'care-general.html',
+    breath:{title:'bad breath',pattern:/\b(bad breath|halitosis|mouth (smell|odou?r)|smelly breath|badbu)\b/,page:'care-general',
       overview:'Persistent bad breath can be linked to oral hygiene or dental and gum problems. Clean teeth and between them regularly, and gently clean your tongue. If it persists despite cleaning, arrange a dental check rather than only masking it with mouthwash.'},
-    sensitivity:{title:'tooth sensitivity',pattern:/\b(sensitiv\w*|cold (water|drink)|hot (water|drink)|thanda|garam)\b/,page:'care-general.html',
+    sensitivity:{title:'tooth sensitivity',pattern:/\b(sensitiv\w*|cold (water|drink)|hot (water|drink)|thanda|garam)\b/,page:'care-general',
       overview:'Sensitivity to hot, cold, or sweet foods can have different causes, so I cannot identify the cause here. Avoid triggers while arranging a dental assessment, particularly if pain lingers, affects one tooth, or occurs when biting. Does the discomfort go away quickly, or keep aching?'},
-    pain:{title:'tooth pain',pattern:/\b(toothache|tooth ache|pain|painful|hurt\w*|aching|ache|dard|dukh\w*)\b/,page:'care-general.html',
+    pain:{title:'tooth pain',pattern:/\b(toothache|tooth ache|pain|painful|hurt\w*|aching|ache|dard|dukh\w*)\b/,page:'care-general',
       overview:'Toothache can have several causes and needs a dental assessment. Arrange a visit if it lasts more than two days, affects daily activities, or occurs with pain when biting. Choose soft foods and avoid food or drinks that trigger pain while arranging care. How long has it been hurting?',
       care:'Until you can see a dentist, choose soft foods and avoid things that trigger pain. Ask a pharmacist about suitable pain relief rather than choosing medication from chat. Worsening pain, fever, or swelling needs urgent dental advice.'}
   };
   const defaults = ['Tooth pain', 'Brushing tips', 'What is a root canal?', 'Clinic details'];
-  const contact = ['Contact the clinic', 'contact.html'];
+  const contact = ['Contact the clinic', 'contact'];
   function normalize(raw) {
     return raw.toLowerCase().normalize('NFKC').replace(/[’']/g,'').replace(/\bcan not\b/g,'cannot')
       .replace(/\b(teath|teet|teeh)\b/g,'teeth').replace(/\b(tooh|toot)\b/g,'tooth')
@@ -124,14 +124,14 @@
       }
       if (/\b(qualification|qualifications|qualified|degree|degrees|experience|ida member|dental association)\b/.test(q)) {
         const profile=[config.dentistName,config.dentistQualifications,config.dentistExperienceSince && `in practice since ${config.dentistExperienceSince}`,config.dentistMembership && `${config.dentistMembership} member`].filter(Boolean);
-        return reply(profile.length ? `${profile.join(' · ')}. Read the About page for the clinic's professional profile and recognition.` : 'The clinic has not provided verified qualification details. Please ask through the inquiry form.',null,['Book a visit','Clinic details'],profile.length ? [['Professional profile','about.html#qualifications'],contact] : [contact],'credentials');
+        return reply(profile.length ? `${profile.join(' · ')}. Read the About page for the clinic's professional profile and recognition.` : 'The clinic has not provided verified qualification details. Please ask through the inquiry form.',null,['Book a visit','Clinic details'],profile.length ? [['Professional profile','about#qualifications'],contact] : [contact],'credentials');
       }
       if (/\b(opening|hours|timings|clinic open|open today|open on|sunday|monday|saturday)\b/.test(q) || /when.*(open|close)/.test(q)) return reply(config.openingHours ? `Hello Teeth lists its opening hours as ${config.openingHours}. Please confirm your appointment with the clinic before visiting; I cannot check live availability.` : 'The clinic has not provided verified opening hours. Please confirm your date and time through the inquiry form before visiting. I cannot check live appointment availability.',null,['Book a visit','Clinic details'],[contact],'hours');
       if (/\b(phone|number|email|whatsapp)\b/.test(q)) {
         const lines=[config.phone && 'Phone: '+config.phone,config.email && 'Email: '+config.email].filter(Boolean);
         return reply(lines.length?lines.join('\n'):'A public phone number and email have not been added yet. You can send your details through the connected Google inquiry form.',null,['Book a visit','Clinic details'],[contact],'contact');
       }
-      if (/\b(international|overseas|abroad|travell?ing|usa|uk|germany|flight)\b/.test(q)) return reply('You can contact Hello Teeth before travelling to Lucknow. Confirm availability, the number of visits, follow-up arrangements, and estimated costs with the clinic before booking flights. This chat cannot confirm a travel or treatment schedule.',null,['Clinic details','Book a visit'],[['International patient guide','international.html'],contact],'travel');
+      if (/\b(international|overseas|abroad|travell?ing|usa|uk|germany|flight)\b/.test(q)) return reply('You can contact Hello Teeth before travelling to Lucknow. Confirm availability, the number of visits, follow-up arrangements, and estimated costs with the clinic before booking flights. This chat cannot confirm a travel or treatment schedule.',null,['Clinic details','Book a visit'],[['International patient guide','international'],contact],'travel');
       if (/\b(book\w*|appointments?|inquiry|enquiry|contact|human|staff)\b|speak to|talk to|arrange a visit/.test(q)) return reply('To request a visit, open our inquiry form and submit your name, contact details, country, and general reason for visiting. The clinic will need to confirm the appointment directly. This conversation is not sent to staff and does not reserve a time.',null,['Clinic details','Opening hours'],[contact],'booking');
       if (found.length>1 && /\b(vs|versus|difference|compare|or)\b/.test(q) && specific.length>1) {
         const keys=specific.slice(0,2);
@@ -154,7 +154,7 @@
       }
       if (/how does it work|\b(process|procedure)\b/.test(q) && current) return reply(topics[current].overview,current,['How long does it take?','Book a visit']);
       if (/^(yes|no|okay|ok|haan|nahi)[!.?]*$/.test(q)) return reply(pending?'Please choose the detail you want to discuss so I do not guess what you mean.':'What would you like to know next?',null,pending==='symptom-duration'?['Since today','More than two days','Home care']:defaults,[],'clarify');
-      if (/\b(treatments?|services?|options?)\b/.test(q)) return reply('Hello Teeth’s website covers everyday care, smile makeovers, dental implants, aligners and braces, restorative care, and children’s dentistry. Ask about a specific option and I can explain it. Confirm availability and suitability with the clinic.',null,['Root canal treatment','Dental implants','Teeth whitening','Braces'],[['All care options','treatments.html']]);
+      if (/\b(treatments?|services?|options?)\b/.test(q)) return reply('Hello Teeth’s website covers everyday care, smile makeovers, dental implants, aligners and braces, restorative care, and children’s dentistry. Ask about a specific option and I can explain it. Confirm availability and suitability with the clinic.',null,['Root canal treatment','Dental implants','Teeth whitening','Braces'],[['All care options','treatments']]);
       if (/^(hi|hello|hey|namaste|good morning)[!. ]*$/.test(q)) return reply('Hello! Ask me a dental question such as “What is a root canal?” or “Why do my gums bleed?”');
       if (/\b(thanks|thank you|thankyou)\b/.test(q)) return reply('You’re welcome. You can ask a follow-up or start a new dental topic.');
       if (/\b(scared|anxious|afraid|nervous|fear)\b/.test(q)) return reply('Tell the dental team what worries you before the appointment. Ask them to explain each step and agree on a signal if you need a pause. You can use your inquiry to mention that you would like to discuss comfort first.',null,['Book a visit','Root canal treatment'],[contact]);
