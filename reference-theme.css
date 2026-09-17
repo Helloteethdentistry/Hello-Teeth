@@ -147,11 +147,17 @@ input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outl
 .inquiry-panel-heading h3 { font-size: 25px; font-weight: 700; }
 .inquiry-panel-heading p { color: var(--muted); font-size: 12px; }
 .inquiry-panel iframe { max-width: 100%; border-radius: 12px; background: #fff; }
+.consultation-price-label { display: block; color: #486c65; font-size: 11px; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase; }
+.consultation-price-amounts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px; }
+.consultation-price-amounts del { color: #68827b; font-size: 19px; font-weight: 550; text-decoration-color: #ae7462; text-decoration-thickness: 2px; }
+.consultation-price-amounts strong { color: #073f3b; font-size: clamp(34px, 3vw, 43px); font-weight: 800; letter-spacing: -1.8px; line-height: 1.1; }
+.consultation-price-badge { padding: 7px 10px; border-radius: 999px; background: #fff1cf; color: #875500; font-size: 11px; font-weight: 750; white-space: nowrap; }
 .consultation-form-launch { display: grid; justify-items: center; padding: 50px 22px 44px; text-align: center; }
 .consultation-form-emblem { display: grid; place-items: center; width: 70px; height: 70px; border-radius: 50%; background: #e2f3ef; color: var(--green); }
 .consultation-form-emblem .icon { width: 29px; height: 29px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .consultation-form-launch h4 { margin-top: 23px; color: var(--green); font-size: 27px; font-weight: 700; letter-spacing: -.8px; line-height: 1.25; }
 .consultation-form-launch p { max-width: 390px; margin-top: 14px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.consultation-price-inline { width: min(100%, 390px); margin-top: 25px; padding: 17px 20px; border: 1px solid #cde4dc; border-radius: 16px; background: #eaf7f3; text-align: left; }
 .consultation-form-launch .consultation-form-button { margin-top: 27px; color: #fff; }
 .page-consultation .inquiry-section { align-items: stretch; }
 .page-consultation .inquiry-panel { display: flex; flex-direction: column; margin-top: 34px; }

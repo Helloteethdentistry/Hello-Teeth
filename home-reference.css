@@ -32,6 +32,16 @@
 .ht-service>p{font-size:13px;line-height:1.8;color:#57736e;margin-bottom:18px}
 .ht-service-more{display:flex;width:100%;justify-content:space-between;gap:10px;font-size:11px;font-weight:600;margin-top:auto;color:#176c65}
 .ht-service-more>span{font-size:18px;line-height:1}
+.ht-consultation-offer{margin-top:55px;padding:48px 0;border-block:1px solid #d4e7e2;background:#eef7f5}
+.ht-consultation-offer-inner{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(295px,.75fr);gap:55px;align-items:center}
+.ht-consultation-offer-copy .ht-kicker{margin-bottom:10px;color:#a8710c;font-size:11px;letter-spacing:1.8px;text-transform:uppercase}
+.ht-consultation-offer-copy h2{max-width:570px;color:#073f3b;font-family:var(--sans);font-size:clamp(29px,3vw,41px);font-weight:750;letter-spacing:-1.2px;line-height:1.2}
+.ht-consultation-offer-copy>p:last-child{max-width:570px;margin-top:15px;color:#4f6e69;font-size:14px;line-height:1.8}
+.ht-consultation-offer-actions{padding:23px 25px;border:1px solid #c9dfda;border-radius:20px;background:#fff;box-shadow:0 13px 32px #073f3b0a}
+.ht-consultation-offer-actions .button{display:flex;width:100%;margin-top:19px;gap:12px;white-space:normal;text-align:center}
+.ht-consultation-offer-actions .button .icon{width:18px;height:18px}
+@media(max-width:760px){.ht-consultation-offer{margin-top:40px;padding:38px 0}.ht-consultation-offer-inner{grid-template-columns:1fr;gap:24px}.ht-consultation-offer-actions{max-width:460px;width:100%}}
+@media(max-width:380px){.ht-consultation-offer-actions{padding:20px}.ht-consultation-offer-actions .button{font-size:12px}}
 .ht-section{padding-block:96px}
 .ht-section-copy h2,.ht-centered-title h2{font-family:var(--sans);font-weight:700;font-size:clamp(29px,3vw,41px);line-height:1.2;letter-spacing:-1.3px;color:#073f3b}
 .ht-section-copy h2 span,.ht-centered-title h2 span{color:#176c65}
